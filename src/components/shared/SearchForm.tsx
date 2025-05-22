@@ -3,6 +3,7 @@ import { Calendar, MapPin, Search } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 type SearchType = 'destination' | 'flight' | 'bus';
+type FlightType = 'one-way' | 'round-trip';
 
 const popularCities = [
   'Delhi',
@@ -25,6 +26,7 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
   const [travelers, setTravelers] = useState(1);
   const [showOriginDropdown, setShowOriginDropdown] = useState(false);
   const [showDestinationDropdown, setShowDestinationDropdown] = useState(false);
+  const [flightType, setFlightType] = useState<FlightType>('one-way');
   
   const navigate = useNavigate();
   
@@ -43,6 +45,7 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
       params.append('departureDate', departureDate);
       params.append('returnDate', returnDate || '');
       params.append('travelers', travelers.toString());
+      params.append('flightType', flightType);
       navigate(`/flights?${params.toString()}`);
     } else if (defaultType === 'bus') {
       params.append('origin', origin);
@@ -113,6 +116,35 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
           </div>
         ) : (
           <>
+            {defaultType === 'flight' && (
+              <div className="mb-4">
+                <div className="flex bg-gray-100 p-1 rounded-lg w-fit">
+                  <button
+                    type="button"
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                      flightType === 'one-way'
+                        ? 'bg-white text-primary-950 shadow-sm'
+                        : 'text-gray-600 hover:text-primary-950'
+                    }`}
+                    onClick={() => setFlightType('one-way')}
+                  >
+                    One Way
+                  </button>
+                  <button
+                    type="button"
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                      flightType === 'round-trip'
+                        ? 'bg-white text-primary-950 shadow-sm'
+                        : 'text-gray-600 hover:text-primary-950'
+                    }`}
+                    onClick={() => setFlightType('round-trip')}
+                  >
+                    Round Trip
+                  </button>
+                </div>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label htmlFor="origin" className="block text-sm font-medium text-gray-700 mb-1">
@@ -209,10 +241,10 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
                   <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
                 </div>
               </div>
-              {defaultType === 'flight' && (
+              {(defaultType === 'flight' && flightType === 'round-trip') && (
                 <div>
                   <label htmlFor="returnDate" className="block text-sm font-medium text-gray-700 mb-1">
-                    Return (optional)
+                    Return
                   </label>
                   <div className="relative">
                     <input 
@@ -221,6 +253,7 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
                       className="input pl-10"
                       value={returnDate}
                       onChange={(e) => setReturnDate(e.target.value)}
+                      required={flightType === 'round-trip'}
                     />
                     <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
                   </div>
