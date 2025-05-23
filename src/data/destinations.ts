@@ -38,40 +38,40 @@ export const destinations: Destination[] = [
       "Airport transfers"
     ],
     itinerary: [
-      {
+        {
         day: 1,
         title: "Arrival in Jaipur",
-        description: "Welcome to the Pink City! Upon arrival, transfer to your heritage hotel. Evening visit to local markets followed by a welcome dinner."
+        description: "Welcome to the Pink City! Upon arrival, transfer to your charming heritage hotel located in the heart of Jaipur. Spend your evening strolling through the bustling local markets, experiencing the vibrant colors, spices, and handicrafts. End the day with a delicious welcome dinner featuring traditional Rajasthani cuisine, setting the perfect tone for your cultural adventure."
       },
       {
         day: 2,
         title: "Jaipur Sightseeing",
-        description: "Full day exploring Amber Fort, City Palace, Jantar Mantar, and Hawa Mahal. Evening free for shopping."
+        description: "Spend a full day exploring Jaipur’s iconic landmarks starting with the majestic Amber Fort where you can enjoy panoramic views of the surrounding hills. Next, visit the grand City Palace, home to the royal family, followed by the fascinating astronomical instruments at Jantar Mantar. Capture the beauty of Hawa Mahal’s intricate facade. The evening is free for you to explore Jaipur’s markets or relax at your hotel."
       },
       {
         day: 3,
         title: "Jaipur to Jodhpur",
-        description: "Drive to Jodhpur. En route, visit Pushkar. Evening arrival in Jodhpur."
+        description: "Depart from Jaipur and head towards Jodhpur, known as the Blue City. En route, stop at Pushkar, a sacred town famous for its serene lake and the vibrant Brahma temple. Explore the spiritual vibes and local bazaars before continuing your journey. Arrive in Jodhpur by evening and check into your hotel, soaking in the city’s historic charm."
       },
       {
         day: 4,
         title: "Jodhpur Exploration",
-        description: "Visit Mehrangarh Fort, Jaswant Thada, and explore the blue city. Enjoy local cuisine for dinner."
+        description: "Discover the majestic Mehrangarh Fort, perched high on a hill, offering sweeping views of the blue-hued city below. Wander through the ornate palaces and museums within the fort. Visit the serene Jaswant Thada memorial, known for its intricate marble work. In the evening, savor authentic Marwari cuisine at a local eatery, immersing yourself in the region’s flavors."
       },
       {
         day: 5,
         title: "Jodhpur to Jaisalmer",
-        description: "Travel to the golden city of Jaisalmer. Evening at leisure."
+        description: "Travel to the enchanting city of Jaisalmer, famed for its golden sandstone architecture. Upon arrival, check into your hotel and enjoy some leisure time to relax or explore the lively streets lined with shops selling traditional textiles and jewelry. The evening is yours to soak in the tranquil desert town ambiance."
       },
       {
         day: 6,
         title: "Jaisalmer Desert Experience",
-        description: "Morning tour of Jaisalmer Fort and havelis. Afternoon camel safari in the Thar Desert with sunset views and cultural performance."
+        description: "Begin your day with a guided tour of the stunning Jaisalmer Fort and its beautiful havelis, rich in history and craftsmanship. In the afternoon, embark on an unforgettable camel safari across the vast Thar Desert. Experience the serene beauty of the sunset as you traverse the dunes, followed by a lively cultural performance around a desert campfire, complete with folk music and traditional dance."
       },
       {
         day: 7,
         title: "Departure",
-        description: "Transfer to airport for your onward journey with wonderful memories of Rajasthan."
+        description: "After breakfast, transfer to the airport for your onward journey. Carry with you the unforgettable memories of Rajasthan’s royal heritage, vibrant culture, and breathtaking landscapes."
       }
     ]
   },
@@ -97,30 +97,30 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Kochi",
-        description: "Welcome to Kerala! Transfer to your hotel and evening Kathakali dance performance."
-      },
-      {
-        day: 2,
-        title: "Kochi to Alleppey",
-        description: "Morning city tour of Fort Kochi. Afternoon transfer to Alleppey to board your private houseboat."
-      },
-      {
-        day: 3,
-        title: "Backwater Cruise",
-        description: "Full day cruising through picturesque backwaters, observing village life and enjoying freshly prepared meals."
-      },
-      {
-        day: 4,
-        title: "Alleppey to Kumarakom",
-        description: "Disembark at Kumarakom. Visit bird sanctuary and enjoy an Ayurvedic massage."
-      },
-      {
-        day: 5,
-        title: "Departure",
-        description: "Morning at leisure. Transfer to Kochi airport for your departure flight."
-      }
+    day: 1,
+    title: "Arrival in Kochi",
+    description: "Welcome to the beautiful state of Kerala! Upon arrival, transfer to your comfortable hotel located in the heart of Kochi. In the evening, immerse yourself in the mesmerizing world of Kathakali, a traditional dance drama famous for its elaborate costumes, intricate facial makeup, and expressive storytelling. This cultural performance offers a perfect introduction to Kerala’s rich heritage."
+  },
+  {
+    day: 2,
+    title: "Kochi to Alleppey",
+    description: "Start your day with a guided city tour of historic Fort Kochi, exploring colonial architecture, charming streets, and the iconic Chinese fishing nets. After lunch, transfer to Alleppey, known as the 'Venice of the East,' where you will board your private houseboat. Settle in and prepare for a unique experience cruising through Kerala’s tranquil backwaters."
+  },
+  {
+    day: 3,
+    title: "Backwater Cruise",
+    description: "Enjoy a full day cruising along the serene backwaters on your houseboat. Watch daily village life unfold on the banks — farmers working the fields, children playing, and fishermen casting their nets. Relish delicious, freshly prepared traditional Kerala meals served onboard, all while soaking in the lush greenery and peaceful surroundings."
+  },
+  {
+    day: 4,
+    title: "Alleppey to Kumarakom",
+    description: "Disembark from the houseboat in the morning and transfer to Kumarakom. Visit the renowned Kumarakom Bird Sanctuary, home to a variety of migratory birds and rich biodiversity. Later, indulge in a rejuvenating Ayurvedic massage at a local wellness center, an ancient practice designed to refresh your body and mind with natural therapies."
+  },
+  {
+    day: 5,
+    title: "Departure",
+    description: "Enjoy a leisurely morning at your hotel, perhaps taking a final stroll or relaxing by the water. When ready, transfer to Kochi airport for your onward departure, carrying fond memories of Kerala’s natural beauty and cultural treasures."
+  }
     ]
   },
   {
@@ -145,35 +145,35 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Delhi",
-        description: "Welcome to India's capital! Transfer to your hotel and brief orientation."
-      },
-      {
-        day: 2,
-        title: "Delhi Sightseeing",
-        description: "Full day exploring Old and New Delhi including Jama Masjid, Red Fort, Humayun's Tomb and Qutub Minar."
-      },
-      {
-        day: 3,
-        title: "Delhi to Agra",
-        description: "Drive to Agra. Afternoon visit to Agra Fort and Mehtab Bagh for sunset views of the Taj Mahal."
-      },
-      {
-        day: 4,
-        title: "Agra to Jaipur",
-        description: "Sunrise visit to the magnificent Taj Mahal. Drive to Jaipur via Fatehpur Sikri."
-      },
-      {
-        day: 5,
-        title: "Jaipur Exploration",
-        description: "Visit Amber Fort, City Palace, Jantar Mantar and Hawa Mahal. Evening cultural dinner."
-      },
-      {
-        day: 6,
-        title: "Departure",
-        description: "Morning at leisure for shopping. Afternoon transfer to Delhi airport for your departure."
-      }
+    day: 1,
+    title: "Arrival in Delhi",
+    description: "Welcome to India's vibrant capital city! Upon arrival, transfer to your centrally located hotel where you’ll receive a brief orientation to prepare you for the exciting days ahead. Take some time to relax and absorb the city’s energy, getting ready for your cultural journey."
+  },
+  {
+    day: 2,
+    title: "Delhi Sightseeing",
+    description: "Spend a full day exploring both Old and New Delhi’s historic and architectural gems. Start with Jama Masjid, one of the largest mosques in India, then wander through the imposing Red Fort complex. Visit Humayun's Tomb, an exquisite example of Mughal architecture, and conclude with the towering Qutub Minar, a UNESCO World Heritage site. Along the way, enjoy glimpses of Delhi’s bustling street life and vibrant markets."
+  },
+  {
+    day: 3,
+    title: "Delhi to Agra",
+    description: "Drive to the historic city of Agra in the morning. In the afternoon, visit the imposing Agra Fort, a UNESCO World Heritage site showcasing Mughal splendor. Later, head to Mehtab Bagh, a garden complex directly opposite the Taj Mahal, perfect for capturing breathtaking sunset views of the iconic monument."
+  },
+  {
+    day: 4,
+    title: "Agra to Jaipur",
+    description: "Rise early for a magical sunrise visit to the Taj Mahal, witnessing the monument bathed in soft morning light. Afterward, begin your drive to Jaipur, the Pink City, stopping en route at Fatehpur Sikri, the abandoned Mughal capital renowned for its stunning red sandstone architecture and rich history."
+  },
+  {
+    day: 5,
+    title: "Jaipur Exploration",
+    description: "Explore Jaipur’s top attractions, starting with the majestic Amber Fort where you can enjoy panoramic views and learn about royal history. Visit the City Palace, an architectural marvel blending Mughal and Rajput styles, followed by Jantar Mantar, an ancient astronomical observatory. Don’t miss the iconic Hawa Mahal, famed for its intricate facade. In the evening, enjoy a cultural dinner featuring traditional Rajasthani music and dance."
+  },
+  {
+    day: 6,
+    title: "Departure",
+    description: "Spend a leisurely morning for some last-minute shopping or sightseeing at your own pace. In the afternoon, transfer back to Delhi airport for your departure, taking with you memories of India’s rich heritage and vibrant culture."
+  }
     ]
   },
   {
@@ -199,25 +199,25 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Varanasi",
-        description: "Welcome to the spiritual capital of India. Evening visit to witness the spectacular Ganga Aarti ceremony at Dashashwamedh Ghat."
-      },
-      {
-        day: 2,
-        title: "Dawn on the Ganges",
-        description: "Early morning boat ride on the sacred Ganges to witness the rituals. After breakfast, walking tour through ancient lanes and temples. Evening meditation session."
-      },
-      {
-        day: 3,
-        title: "Sarnath Excursion",
-        description: "Morning excursion to Sarnath, where Buddha gave his first sermon. Afternoon at leisure. Evening second boat ride to experience different ghats."
-      },
-      {
-        day: 4,
-        title: "Departure",
-        description: "Transfer to airport for your onward journey, carrying the spiritual essence of Varanasi with you."
-      }
+    day: 1,
+    title: "Arrival in Varanasi",
+    description: "Welcome to the spiritual heart of India. Upon arrival, settle into your hotel before heading out in the evening to witness the mesmerizing Ganga Aarti ceremony at Dashashwamedh Ghat. Experience the rhythmic chanting, flickering oil lamps, and spiritual energy as priests perform this sacred ritual on the banks of the Ganges."
+  },
+  {
+    day: 2,
+    title: "Dawn on the Ganges",
+    description: "Start your day early with a serene boat ride on the sacred Ganges River to observe the morning rituals and prayers along the ghats. After a traditional breakfast, embark on a walking tour through Varanasi’s ancient labyrinthine lanes, exploring historic temples, vibrant markets, and local life. Conclude your day with a calming evening meditation session, connecting deeper with the city’s spiritual vibe."
+  },
+  {
+    day: 3,
+    title: "Sarnath Excursion",
+    description: "Take a morning trip to Sarnath, a short drive from Varanasi, where Lord Buddha delivered his first sermon after enlightenment. Explore the archaeological sites, peaceful gardens, and the impressive Dhamek Stupa. Return to Varanasi for a leisurely afternoon. In the evening, enjoy a second boat ride to view different ghats illuminated by soft lights, offering a fresh perspective on the sacred river’s timeless beauty."
+  },
+  {
+    day: 4,
+    title: "Departure",
+    description: "After breakfast, transfer to the airport for your onward journey, carrying with you the profound spiritual essence and memories of Varanasi’s timeless traditions."
+  }
     ]
   },
   {
@@ -243,45 +243,45 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Delhi",
-        description: "Welcome to India! Overnight stay in Delhi before heading to the mountains."
-      },
-      {
-        day: 2,
-        title: "Delhi to Manali",
-        description: "Fly to Kullu and transfer to Manali. Evening acclimatization walk and briefing."
-      },
-      {
-        day: 3,
-        title: "Manali Exploration",
-        description: "Visit Hadimba Temple, Old Manali and Vashisht hot springs. Afternoon preparation for trek."
-      },
-      {
-        day: 4,
-        title: "Manali to Solang Valley",
-        description: "Begin trek to Solang Valley. Afternoon paragliding session if weather permits."
-      },
-      {
-        day: 5,
-        title: "Trek to Dhundi",
-        description: "Trek through beautiful landscapes to Dhundi. Overnight camping with bonfire."
-      },
-      {
-        day: 6,
-        title: "Dhundi to Bakarthach",
-        description: "Continue trek to higher altitude at Bakarthach with stunning mountain views."
-      },
-      {
-        day: 7,
-        title: "Return to Manali",
-        description: "Trek back to Solang and transfer to Manali. Afternoon river rafting in Beas River."
-      },
-      {
-        day: 8,
-        title: "Departure",
-        description: "Transfer to Kullu airport for flight to Delhi and your international connection."
-      }
+    day: 1,
+    title: "Arrival in Delhi",
+    description: "Welcome to India! Arrive in Delhi and transfer to your hotel for an overnight stay. Take this time to rest and prepare for your upcoming mountain adventure."
+  },
+  {
+    day: 2,
+    title: "Delhi to Manali",
+    description: "Fly from Delhi to Kullu Airport, followed by a scenic transfer to the picturesque hill station of Manali. In the evening, enjoy a gentle acclimatization walk through the town and attend a briefing session about the upcoming trek."
+  },
+  {
+    day: 3,
+    title: "Manali Exploration",
+    description: "Spend the day exploring Manali’s highlights including the serene Hadimba Temple nestled amidst cedar forests, the charming Old Manali with its quaint cafes and shops, and the rejuvenating Vashisht hot springs. Use the afternoon to rest and prepare your gear for the trek ahead."
+  },
+  {
+    day: 4,
+    title: "Manali to Solang Valley",
+    description: "Begin your trek to the scenic Solang Valley, surrounded by snow-capped peaks and alpine meadows. Weather permitting, experience an exhilarating paragliding session, soaring above the valley with breathtaking views."
+  },
+  {
+    day: 5,
+    title: "Trek to Dhundi",
+    description: "Trek through pristine landscapes of pine forests and rolling hills to the peaceful village of Dhundi. Set up camp for the night and enjoy a cozy bonfire under the starry mountain sky."
+  },
+  {
+    day: 6,
+    title: "Dhundi to Bakarthach",
+    description: "Continue ascending to Bakarthach, reaching higher altitudes with stunning panoramic views of the Himalayan peaks. Experience the tranquility of this remote area as you camp overnight."
+  },
+  {
+    day: 7,
+    title: "Return to Manali",
+    description: "Trek back to Solang Valley and transfer to Manali town. In the afternoon, enjoy an adventurous river rafting session on the lively Beas River, perfect for adrenaline seekers and nature lovers alike."
+  },
+  {
+    day: 8,
+    title: "Departure",
+    description: "Transfer to Kullu airport for your flight back to Delhi, connecting with your international journey home. Take with you unforgettable memories of your Himalayan trek and mountain experiences."
+  }
     ]
   },
   {
@@ -306,30 +306,30 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Goa",
-        description: "Welcome to India's favorite beach destination! Transfer to your beachfront resort. Evening beach walk and welcome drink at sunset."
-      },
-      {
-        day: 2,
-        title: "Beach & Water Sports",
-        description: "Morning at leisure on the beach. Afternoon water sports including jet skiing and parasailing. Evening free to explore local shacks and cuisine."
-      },
-      {
-        day: 3,
-        title: "Cultural Exploration",
-        description: "Half-day tour of Old Goa with Portuguese-era churches and Panjim. Afternoon spice plantation visit with traditional Goan lunch."
-      },
-      {
-        day: 4,
-        title: "Beach Relaxation & Cruise",
-        description: "Morning yoga session on the beach. Day at leisure. Evening sunset cruise with dinner and music."
-      },
-      {
-        day: 5,
-        title: "Departure",
-        description: "Last morning to soak up the sun before transfer to airport for your departure flight."
-      }
+    day: 1,
+    title: "Arrival in Goa",
+    description: "Welcome to India's favorite beach destination! Upon arrival, transfer to your beautiful beachfront resort where you can unwind and soak in the tropical atmosphere. In the evening, take a peaceful walk along the sandy shores and enjoy a refreshing welcome drink while watching the stunning sunset over the Arabian Sea."
+  },
+  {
+    day: 2,
+    title: "Beach & Water Sports",
+    description: "Spend a leisurely morning relaxing on the pristine beaches, enjoying the sun and sea breeze. In the afternoon, get your adrenaline pumping with thrilling water sports like jet skiing and parasailing. As evening falls, explore vibrant beach shacks and savor authentic Goan cuisine infused with Portuguese flavors."
+  },
+  {
+    day: 3,
+    title: "Cultural Exploration",
+    description: "Embark on a half-day guided tour of Old Goa, visiting magnificent Portuguese-era churches such as Basilica of Bom Jesus and Se Cathedral, rich with history and stunning architecture. In the afternoon, visit a local spice plantation to learn about exotic spices and enjoy a traditional Goan lunch amidst lush greenery."
+  },
+  {
+    day: 4,
+    title: "Beach Relaxation & Cruise",
+    description: "Start your day with a calming yoga session on the beach, connecting with nature. Spend the rest of the day at your leisure—whether lounging by the pool, shopping, or exploring. In the evening, set sail on a scenic sunset cruise complete with delicious dinner and live music, creating unforgettable memories on the water."
+  },
+  {
+    day: 5,
+    title: "Departure",
+    description: "Enjoy your last morning in Goa soaking up the sun or taking a final stroll on the beach. Later, transfer to the airport for your departure flight, carrying the warm memories of your Goan getaway."
+  }
     ]
   },
   {
@@ -354,40 +354,40 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Port Blair",
-        description: "Welcome to the Andaman Islands! Afternoon visit to Cellular Jail and attend the Light & Sound show in the evening."
-      },
-      {
-        day: 2,
-        title: "Port Blair to Havelock Island",
-        description: "Morning ferry to Havelock Island. Afternoon at Radhanagar Beach, consistently rated one of Asia's best beaches."
-      },
-      {
-        day: 3,
-        title: "Havelock Island Activities",
-        description: "Snorkeling at Elephant Beach and leisure time at Kalapathar Beach. Optional forest trek available."
-      },
-      {
-        day: 4,
-        title: "Scuba & Beach Day",
-        description: "Introductory scuba diving session for beginners. Afternoon at leisure to enjoy the pristine beaches."
-      },
-      {
-        day: 5,
-        title: "Havelock to Neil Island",
-        description: "Ferry to Neil Island. Visit Natural Bridge, Bharatpur Beach and Laxmanpur Beach. Sunset at Laxmanpur Beach."
-      },
-      {
-        day: 6,
-        title: "Neil Island to Port Blair",
-        description: "Morning at leisure. Afternoon ferry back to Port Blair. Evening shopping for souvenirs."
-      },
-      {
-        day: 7,
-        title: "Departure",
-        description: "Morning visit to Anthropological Museum before transfer to airport for your departure flight."
-      }
+    day: 1,
+    title: "Arrival in Port Blair",
+    description: "Welcome to the tropical paradise of the Andaman Islands! After arriving, transfer to your hotel and relax. In the afternoon, visit the historic Cellular Jail, a poignant reminder of India’s freedom struggle. As evening falls, attend the captivating Light & Sound show that narrates the jail’s stories through an immersive experience."
+  },
+  {
+    day: 2,
+    title: "Port Blair to Havelock Island",
+    description: "Take a morning ferry to Havelock Island, known for its stunning beaches and crystal-clear waters. Spend the afternoon at Radhanagar Beach, frequently ranked among Asia’s best beaches, perfect for swimming, sunbathing, or simply enjoying the breathtaking sunset."
+  },
+  {
+    day: 3,
+    title: "Havelock Island Activities",
+    description: "Start your day with snorkeling at Elephant Beach, exploring vibrant coral reefs and marine life. Later, unwind at the tranquil Kalapathar Beach with its striking black rocks and turquoise waters. For the adventurous, there’s an optional forest trek through the island’s lush greenery."
+  },
+  {
+    day: 4,
+    title: "Scuba & Beach Day",
+    description: "Experience the thrill of an introductory scuba diving session designed for beginners, discovering underwater wonders of the Andaman Sea. Spend the afternoon at leisure, enjoying the pristine beaches, swimming, or relaxing by the shore."
+  },
+  {
+    day: 5,
+    title: "Havelock to Neil Island",
+    description: "Catch a ferry to Neil Island. Explore the unique Natural Bridge, a fascinating rock formation shaped by the sea. Visit Bharatpur Beach, known for its calm waters, and Laxmanpur Beach where you can watch a spectacular sunset painting the sky with colors."
+  },
+  {
+    day: 6,
+    title: "Neil Island to Port Blair",
+    description: "Enjoy a leisurely morning soaking in the island’s peaceful ambiance. In the afternoon, ferry back to Port Blair. Spend your evening shopping for souvenirs and local handicrafts to remember your trip."
+  },
+  {
+    day: 7,
+    title: "Departure",
+    description: "Before your flight, visit the Anthropological Museum to learn about the indigenous tribes and culture of the Andaman Islands. Then transfer to the airport for your onward journey."
+  }
     ]
   },
   {
@@ -413,50 +413,50 @@ export const destinations: Destination[] = [
     ],
     itinerary: [
       {
-        day: 1,
-        title: "Arrival in Leh",
-        description: "Welcome to Ladakh! Rest day for acclimatization to the high altitude."
-      },
-      {
-        day: 2,
-        title: "Leh Monastery Tour",
-        description: "Visit Shey, Thiksey and Hemis monasteries. Evening walk in Leh Market."
-      },
-      {
-        day: 3,
-        title: "Leh to Nubra Valley",
-        description: "Drive over Khardung La, one of the world's highest motorable passes. Arrive at Nubra Valley and visit Diskit Monastery."
-      },
-      {
-        day: 4,
-        title: "Nubra Valley Exploration",
-        description: "Bactrian camel safari on sand dunes. Visit Panamik hot springs. Overnight in Nubra."
-      },
-      {
-        day: 5,
-        title: "Nubra to Pangong Lake",
-        description: "Drive to the magnificent Pangong Lake via Shyok River route. Overnight camping by the lake."
-      },
-      {
-        day: 6,
-        title: "Pangong Lake to Leh",
-        description: "Morning at leisure by the lake. Return to Leh via Chang La pass."
-      },
-      {
-        day: 7,
-        title: "Excursion to Lamayuru",
-        description: "Day trip to Lamayuru Monastery via Magnetic Hill and Gurudwara Pathar Sahib. Return to Leh."
-      },
-      {
-        day: 8,
-        title: "Rafting & Local Experience",
-        description: "Morning rafting in Zanskar River (seasonal). Afternoon visit to SECMOL and Leh Palace."
-      },
-      {
-        day: 9,
-        title: "Departure",
-        description: "Transfer to Leh airport for your departure flight."
-      }
+    day: 1,
+    title: "Arrival in Leh",
+    description: "Welcome to the breathtaking high-altitude desert of Ladakh! Upon arrival, take it easy to acclimatize to the thin mountain air. Rest well to prepare for the adventures ahead, and enjoy the serene Himalayan landscape surrounding Leh."
+  },
+  {
+    day: 2,
+    title: "Leh Monastery Tour",
+    description: "Explore the spiritual heart of Ladakh with visits to iconic monasteries: Shey, the ancient summer palace of Ladakhi kings; Thiksey, resembling the Potala Palace of Lhasa; and Hemis, the largest and richest monastery in the region. End your day with a leisurely stroll through the bustling Leh Market, soaking in local culture and crafts."
+  },
+  {
+    day: 3,
+    title: "Leh to Nubra Valley",
+    description: "Embark on a scenic drive crossing Khardung La, one of the highest motorable passes in the world at over 5,300 meters. Descend into the stunning Nubra Valley and visit Diskit Monastery, famous for its giant statue of Maitreya Buddha overlooking the valley."
+  },
+  {
+    day: 4,
+    title: "Nubra Valley Exploration",
+    description: "Experience a unique Bactrian camel safari across the golden sand dunes of Hunder. Afterwards, relax in the rejuvenating Panamik hot springs, known for their healing properties. Spend the night under the stars in Nubra’s tranquil environment."
+  },
+  {
+    day: 5,
+    title: "Nubra to Pangong Lake",
+    description: "Drive to the mesmerizing Pangong Lake, following the rugged Shyok River route. Enjoy breathtaking vistas of the shimmering blue lake nestled amidst barren mountains. Set up camp by the lakeshore and relish a magical night under the Himalayan sky."
+  },
+  {
+    day: 6,
+    title: "Pangong Lake to Leh",
+    description: "Spend a peaceful morning soaking in the stunning views and serene atmosphere by the lake. Journey back to Leh crossing Chang La pass, witnessing more of Ladakh’s raw and dramatic landscapes."
+  },
+  {
+    day: 7,
+    title: "Excursion to Lamayuru",
+    description: "Take a full-day excursion to Lamayuru Monastery, known as the 'Moonland' for its surreal lunar-like terrain. En route, stop at the mystical Magnetic Hill where vehicles appear to defy gravity, and visit the sacred Sikh Gurudwara Pathar Sahib. Return to Leh for the evening."
+  },
+  {
+    day: 8,
+    title: "Rafting & Local Experience",
+    description: "If in season, enjoy an exhilarating morning rafting on the fast-flowing Zanskar River. Afterwards, visit SECMOL (Students' Educational and Cultural Movement of Ladakh), an inspiring grassroots educational initiative, and explore the historic Leh Palace with its panoramic views."
+  },
+  {
+    day: 9,
+    title: "Departure",
+    description: "After a memorable journey, transfer to Leh airport for your onward flight, carrying the unique spirit and stunning memories of Ladakh with you."
+  }
     ]
   },
   {
@@ -479,33 +479,33 @@ export const destinations: Destination[] = [
   ],
   itinerary: [
     {
-      day: 1,
-      title: "Arrival & Agra Fort",
-      description: "Arrive in Agra. Afternoon visit to Agra Fort and Mehtab Bagh for a sunset Taj view."
-    },
-    {
-      day: 2,
-      title: "Taj Mahal & Fatehpur Sikri",
-      description: "Early morning Taj Mahal visit. Later, a guided excursion to Fatehpur Sikri."
-    },
-    {
-      day: 3,
-      title: "Shopping & Departure",
-      description: "Visit local marble markets before departure."
-    }
+    day: 1,
+    title: "Arrival & Agra Fort",
+    description: "Arrive in the historic city of Agra, home to the iconic Taj Mahal. After settling into your hotel, enjoy an afternoon visit to the majestic Agra Fort, a UNESCO World Heritage Site showcasing impressive Mughal architecture. Later, stroll through Mehtab Bagh, a beautiful garden complex across the Yamuna River, offering a spectacular sunset view of the Taj Mahal bathed in golden light."
+  },
+  {
+    day: 2,
+    title: "Taj Mahal & Fatehpur Sikri",
+    description: "Begin your day early with a mesmerizing sunrise visit to the Taj Mahal, witnessing the monument’s ethereal beauty in the soft morning light. Afterwards, embark on a guided excursion to Fatehpur Sikri, the abandoned Mughal capital, where you’ll explore grand palaces, mosques, and courtyards that tell stories of the empire’s glorious past."
+  },
+  {
+    day: 3,
+    title: "Shopping & Departure",
+    description: "Spend your final morning exploring Agra’s famous marble markets, where you can shop for exquisite marble handicrafts, jewelry, and souvenirs. Afterward, transfer to your onward destination, taking with you unforgettable memories of your time in Agra."
+  }
   ]
 },
 {
-  id: "udaipur-lakes-palaces",
-  name: "Udaipur Lakes & Palaces",
-  location: "Udaipur, India",
-  description: "Discover the romance of Udaipur with serene lakes, royal palaces, and cultural experiences.",
-  image: "https://images.pexels.com/photos/31778015/pexels-photo-31778015/free-photo-of-scenic-view-of-lake-pichola-with-city-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "cultural",
-  price: 55000,
-  rating: 4.8,
-  duration: "4 days",
-  includes: [
+  "id": "udaipur-lakes-palaces",
+  "name": "Udaipur Lakes & Palaces",
+  "location": "Udaipur, India",
+  "description": "Discover the romance of Udaipur with serene lakes, royal palaces, and cultural experiences.",
+  "image": "https://images.pexels.com/photos/31778015/pexels-photo-31778015/free-photo-of-scenic-view-of-lake-pichola-with-city-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "cultural",
+  "price": 55000,
+  "rating": 4.8,
+  "duration": "4 days",
+  "includes": [
     "3 nights in lakeside hotel",
     "Sunset boat ride on Lake Pichola",
     "Visit to City Palace and Jag Mandir",
@@ -513,40 +513,40 @@ export const destinations: Destination[] = [
     "Local cuisine tasting",
     "Private guide & transfers"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Arrival & Lake Pichola",
-      description: "Arrival in Udaipur followed by a relaxing sunset boat ride on Lake Pichola."
+      "day": 1,
+      "title": "Arrival & Lake Pichola",
+      "description": "Arrive in romantic Udaipur and settle into your lakeside hotel overlooking the shimmering waters of Lake Pichola. In the evening, unwind with a picturesque sunset boat ride on the lake, absorbing stunning views of the City Palace and surrounding hills as the sky turns golden."
     },
     {
-      day: 2,
-      title: "City Palace & Jagdish Temple",
-      description: "Explore City Palace, Jagdish Temple, and Saheliyon Ki Bari. Evening folk dance show."
+      "day": 2,
+      "title": "City Palace & Jagdish Temple",
+      "description": "Spend your day exploring the majestic City Palace complex, admiring its intricate architecture, museums, and courtyards. Visit the nearby Jagdish Temple, a beautiful example of Indo-Aryan architecture. Later, stroll through the fragrant gardens of Saheliyon Ki Bari. Conclude your day with an immersive folk dance performance showcasing Rajasthani culture and traditions."
     },
     {
-      day: 3,
-      title: "Monsoon Palace & Market Visit",
-      description: "Visit Monsoon Palace and enjoy traditional Rajasthani lunch. Evening at the local markets."
+      "day": 3,
+      "title": "Monsoon Palace & Market Visit",
+      "description": "Head to the Monsoon Palace perched atop a hill for panoramic views of Udaipur and its lakes. Enjoy a traditional Rajasthani lunch with authentic flavors. In the evening, explore Udaipur’s lively local markets, perfect for picking up handicrafts, textiles, and souvenirs."
     },
     {
-      day: 4,
-      title: "Departure",
-      description: "Free time for a stroll before airport transfer."
+      "day": 4,
+      "title": "Departure",
+      "description": "Spend a leisurely morning with a final stroll along the lakeside promenade before checking out from your hotel and transferring to the airport or railway station for your onward journey."
     }
   ]
 },
 {
-  id: "maldives-island-escape",
-  name: "Maldives Island Escape",
-  location: "Maldives",
-  description: "Unwind in the turquoise waters of the Maldives with luxurious villas, coral reefs, and serene beaches.",
-  image: "https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "beach",
-  price: 45000,
-  rating: 4.9,
-  duration: "5 days",
-  includes: [
+  "id": "maldives-island-escape",
+  "name": "Maldives Island Escape",
+  "location": "Maldives",
+  "description": "Unwind in the turquoise waters of the Maldives with luxurious villas, coral reefs, and serene beaches.",
+  "image": "https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "beach",
+  "price": 45000,
+  "rating": 4.9,
+  "duration": "5 days",
+  "includes": [
     "4 nights in overwater villa",
     "All meals included",
     "Airport speedboat transfers",
@@ -554,45 +554,45 @@ export const destinations: Destination[] = [
     "Sunset cruise",
     "Spa session"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Arrival in Paradise",
-      description: "Arrival and transfer to overwater villa. Relax and soak in ocean views."
+      "day": 1,
+      "title": "Arrival in Paradise",
+      "description": "Arrive in the Maldives and take a scenic speedboat transfer to your luxurious overwater villa. Settle in and spend the day relaxing, soaking in breathtaking ocean views and the soothing sounds of the sea."
     },
     {
-      day: 2,
-      title: "Snorkeling & Beach Time",
-      description: "Explore coral reefs and enjoy sunbathing on private beach."
+      "day": 2,
+      "title": "Snorkeling & Beach Time",
+      "description": "Discover vibrant coral reefs teeming with colorful marine life on a guided snorkeling excursion. Later, unwind on your private beach, sunbathing or enjoying a refreshing swim in crystal-clear waters."
     },
     {
-      day: 3,
-      title: "Water Adventures",
-      description: "Kayaking, paddle boarding, and a romantic sunset cruise."
+      "day": 3,
+      "title": "Water Adventures",
+      "description": "Engage in thrilling water activities including kayaking and paddleboarding over calm lagoons. In the evening, enjoy a romantic sunset cruise, with stunning hues lighting up the sky and sea."
     },
     {
-      day: 4,
-      title: "Spa & Leisure",
-      description: "Relax with a spa treatment and dine under the stars."
+      "day": 4,
+      "title": "Spa & Leisure",
+      "description": "Indulge in a rejuvenating spa treatment designed to relax and refresh. Spend the rest of the day at your leisure, dining under the stars and savoring exquisite Maldivian cuisine."
     },
     {
-      day: 5,
-      title: "Departure",
-      description: "Check out and speedboat transfer to airport."
+      "day": 5,
+      "title": "Departure",
+      "description": "After a leisurely breakfast, check out and transfer by speedboat to the airport, bidding farewell to your island paradise."
     }
   ]
 },
 {
-  id: "gujarat-heritage-trail",
-  name: "Gujarat Heritage Trail",
-  location: "Gujarat, India",
-  description: "Dive into Gujarat’s culture with stepwells, temples, wildlife safaris, and handicraft villages.",
-  image: "https://images.pexels.com/photos/7171320/pexels-photo-7171320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "cultural",
-  price: 35500,
-  rating: 4.5,
-  duration: "6 days",
-  includes: [
+  "id": "gujarat-heritage-trail",
+  "name": "Gujarat Heritage Trail",
+  "location": "Gujarat, India",
+  "description": "Dive into Gujarat’s culture with stepwells, temples, wildlife safaris, and handicraft villages.",
+  "image": "https://images.pexels.com/photos/7171320/pexels-photo-7171320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "cultural",
+  "price": 35500,
+  "rating": 4.5,
+  "duration": "6 days",
+  "includes": [
     "5 nights in heritage hotels",
     "Daily breakfast",
     "Guided sightseeing tours",
@@ -600,50 +600,50 @@ export const destinations: Destination[] = [
     "Wildlife safari in Gir",
     "Local crafts village tour"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Ahmedabad Arrival",
-      description: "Visit Sabarmati Ashram and Adalaj Stepwell. Explore night markets."
+      "day": 1,
+      "title": "Ahmedabad Arrival",
+      "description": "Arrive in Ahmedabad, a vibrant city blending tradition and modernity. Visit Sabarmati Ashram, the home of Mahatma Gandhi and a symbol of India’s freedom struggle. Explore the intricately carved Adalaj Stepwell, an architectural marvel. In the evening, wander through the bustling night markets, soaking in local flavors and handicrafts."
     },
     {
-      day: 2,
-      title: "Modhera & Patan",
-      description: "Day trip to Sun Temple and Rani ki Vav, a UNESCO heritage stepwell."
+      "day": 2,
+      "title": "Modhera & Patan",
+      "description": "Take a day trip to Modhera to witness the stunning Sun Temple, renowned for its intricate carvings and alignment with the sun. Next, explore Patan, home to Rani ki Vav, a UNESCO World Heritage stepwell famous for its exquisite sculptures and engineering brilliance."
     },
     {
-      day: 3,
-      title: "Kutch Exploration",
-      description: "Drive to Rann of Kutch. Visit traditional villages and handicraft centers."
+      "day": 3,
+      "title": "Kutch Exploration",
+      "description": "Drive to the Rann of Kutch, known for its vast white salt desert. Visit traditional Kutchi villages and handicraft centers, where local artisans create beautiful textiles, embroidery, and pottery, offering a glimpse into the region’s vibrant culture."
     },
     {
-      day: 4,
-      title: "White Desert Tour",
-      description: "Explore the salt desert and enjoy local cuisine in a tented camp."
+      "day": 4,
+      "title": "White Desert Tour",
+      "description": "Explore the surreal white salt desert of the Rann, an otherworldly landscape especially stunning at sunrise or sunset. Experience local cuisine in a tented camp, enjoying folk music and dance performances under the starry sky."
     },
     {
-      day: 5,
-      title: "Gir Safari",
-      description: "Visit Gir National Park for lion safari. Evening leisure time."
+      "day": 5,
+      "title": "Gir Safari",
+      "description": "Visit Gir National Park, the only natural habitat of the Asiatic lions. Embark on a thrilling safari to spot lions, leopards, deer, and various bird species. Spend the evening at leisure, perhaps exploring local markets or relaxing at your heritage hotel."
     },
     {
-      day: 6,
-      title: "Departure",
-      description: "Check-out and return transfer."
+      "day": 6,
+      "title": "Departure",
+      "description": "After breakfast, check out from your hotel and transfer to the airport or railway station for your onward journey, carrying rich memories of Gujarat’s heritage and wildlife."
     }
   ]
 },
 {
-  id: "nainital-hill-getaway",
-  name: "Nainital Hill Getaway",
-  location: "Nainital, India",
-  description: "Bask in the charm of Nainital’s lakes, scenic viewpoints, and tranquil hill vibes.",
-  image: "https://images.pexels.com/photos/16829036/pexels-photo-16829036/free-photo-of-town-and-lake-with-hills-around.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "adventure",
-  price: 32500,
-  rating: 4.3,
-  duration: "4 days",
-  includes: [
+  "id": "nainital-hill-getaway",
+  "name": "Nainital Hill Getaway",
+  "location": "Nainital, India",
+  "description": "Bask in the charm of Nainital’s lakes, scenic viewpoints, and tranquil hill vibes.",
+  "image": "https://images.pexels.com/photos/16829036/pexels-photo-16829036/free-photo-of-town-and-lake-with-hills-around.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "adventure",
+  "price": 32500,
+  "rating": 4.3,
+  "duration": "4 days",
+  "includes": [
     "3 nights in lake-view hotel",
     "Daily breakfast",
     "Boating in Naini Lake",
@@ -651,40 +651,41 @@ export const destinations: Destination[] = [
     "Nainital Zoo visit",
     "Shopping at Mall Road"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Arrival in Nainital",
-      description: "Check in and enjoy the serene views. Evening boat ride in Naini Lake."
+      "day": 1,
+      "title": "Arrival in Nainital",
+      "description": "Arrive and check in at your lake-view hotel, offering breathtaking views of Naini Lake. Spend a relaxing evening enjoying a serene boat ride on the calm waters of the lake, watching the sunset and the reflection of the surrounding hills."
     },
     {
-      day: 2,
-      title: "Local Sightseeing",
-      description: "Visit Naina Devi Temple, Snow View Point via cable car, and Nainital Zoo."
+      "day": 2,
+      "title": "Local Sightseeing",
+      "description": "Begin the day with a visit to the sacred Naina Devi Temple, perched overlooking the lake. Take a scenic cable car ride to Snow View Point for panoramic views of the snow-capped Himalayan peaks. Explore the Nainital Zoo, home to rare Himalayan species like the snow leopard and the Himalayan black bear."
     },
     {
-      day: 3,
-      title: "Leisure Day",
-      description: "Relax or explore nearby areas like Bhimtal or Sattal."
+      "day": 3,
+      "title": "Leisure Day",
+      "description": "Enjoy a free day to relax or take optional excursions to nearby destinations like Bhimtal or Sattal, known for their beautiful lakes and peaceful surroundings. Alternatively, explore local cafes and shops at your own pace."
     },
     {
-      day: 4,
-      title: "Departure",
-      description: "Check out after breakfast and return journey."
+      "day": 4,
+      "title": "Departure",
+      "description": "After breakfast, check out from your hotel and begin your return journey with fond memories of the tranquil hills and scenic beauty of Nainital."
     }
   ]
 },
+
 {
-  id: "north-east-adventure",
-  name: "North East Adventure",
-  location: "North East India",
-  description: "Explore lush landscapes, vibrant tribes, and pristine wildlife in the enchanting North East.",
-  image: "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "mountain",
-  price: 70000,
-  rating: 4.7,
-  duration: "7 days",
-  includes: [
+  "id": "north-east-adventure",
+  "name": "North East Adventure",
+  "location": "North East India",
+  "description": "Explore lush landscapes, vibrant tribes, and pristine wildlife in the enchanting North East.",
+  "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "mountain",
+  "price": 70000,
+  "rating": 4.7,
+  "duration": "7 days",
+  "includes": [
     "6 nights accommodation in eco-resorts",
     "Daily breakfast and select dinners",
     "Guided nature treks",
@@ -692,102 +693,101 @@ export const destinations: Destination[] = [
     "Cultural village tours",
     "Boat ride on Umiam Lake"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Guwahati Arrival",
-      description: "Visit Kamakhya Temple and Assam State Museum. Evening river cruise on Brahmaputra."
+      "day": 1,
+      "title": "Guwahati Arrival",
+      "description": "Arrive in Guwahati and visit the revered Kamakhya Temple, a significant pilgrimage site blending natural beauty with spiritual aura. Explore the Assam State Museum to learn about the region’s rich history and culture. In the evening, enjoy a serene river cruise on the Brahmaputra River, soaking in the panoramic views and tranquil atmosphere."
     },
     {
-      day: 2,
-      title: "Kaziranga National Park",
-      description: "Jeep safari to spot one-horned rhinoceros, elephants, and diverse birdlife."
+      "day": 2,
+      "title": "Kaziranga National Park",
+      "description": "Embark on an exciting jeep safari in Kaziranga National Park, a UNESCO World Heritage Site famed for its population of the endangered one-horned rhinoceros. Spot elephants, wild buffalo, and a variety of bird species as you traverse the lush grasslands and wetlands of this protected sanctuary."
     },
     {
-      day: 3,
-      title: "Shillong & Umiam Lake",
-      description: "Explore Shillong city and enjoy a relaxing boat ride on Umiam Lake."
+      "day": 3,
+      "title": "Shillong & Umiam Lake",
+      "description": "Travel to Shillong, known as the 'Scotland of the East' for its rolling hills and pleasant climate. Explore the lively city markets and local attractions before enjoying a peaceful boat ride on Umiam Lake, surrounded by verdant hills and beautiful scenery."
     },
     {
-      day: 4,
-      title: "Tawang Valley",
-      description: "Drive to Tawang. Visit Monasteries and local tribal villages."
+      "day": 4,
+      "title": "Tawang Valley",
+      "description": "Drive to the mystical Tawang Valley nestled in Arunachal Pradesh. Visit ancient Buddhist monasteries like Tawang Monastery, one of the largest in India, and interact with local tribal communities to experience their unique customs and traditions."
     },
     {
-      day: 5,
-      title: "Dirang & Sangti Valley",
-      description: "Explore the scenic valleys, hot springs, and local markets."
+      "day": 5,
+      "title": "Dirang & Sangti Valley",
+      "description": "Explore the picturesque Dirang and Sangti Valleys, known for their scenic beauty and tranquil hot springs. Visit local markets to discover handcrafted goods and experience the warm hospitality of the region’s inhabitants."
     },
     {
-      day: 6,
-      title: "Back to Guwahati",
-      description: "Return journey with stops at scenic spots and local crafts markets."
+      "day": 6,
+      "title": "Back to Guwahati",
+      "description": "Return journey to Guwahati with stops at scenic viewpoints and handicraft markets. Take time to purchase authentic local crafts and souvenirs as a memory of your North East adventure."
     },
     {
-      day: 7,
-      title: "Departure",
-      description: "Check-out and transfer to airport."
+      "day": 7,
+      "title": "Departure",
+      "description": "After breakfast, check out and transfer to the airport for your onward journey, carrying beautiful memories of North East India’s natural and cultural richness."
     }
   ]
 },
-
 {
-  id: "orissa-cultural-heritage",
-  name: "Orissa Cultural Heritage",
-  location: "Orissa (Odisha), India",
-  description: "Immerse yourself in Odisha’s rich temple architecture, classical dance, and tranquil beaches.",
-  image: "https://images.pexels.com/photos/12871861/pexels-photo-12871861.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  category: "cultural",
-  price: 44000,
-  rating: 4.4,
-  duration: "5 days",
-  includes: [
+  "id": "orissa-cultural-heritage",
+  "name": "Orissa Cultural Heritage",
+  "location": "Orissa (Odisha), India",
+  "description": "Immerse yourself in Odisha’s rich temple architecture, classical dance, and tranquil beaches.",
+  "image": "https://images.pexels.com/photos/12871861/pexels-photo-12871861.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+  "category": "cultural",
+  "price": 44000,
+  "rating": 4.4,
+  "duration": "5 days",
+  "includes": [
     "4 nights hotel stay",
     "Daily breakfast",
     "Guided tours of temples and museums",
     "Visit to Puri Beach and Konark Sun Temple",
     "Traditional Odissi dance performance"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Bhubaneswar Arrival",
-      description: "Visit Lingaraj Temple and Odisha State Museum."
+      "day": 1,
+      "title": "Bhubaneswar Arrival",
+      "description": "Arrive in Bhubaneswar, the temple city of India. Visit the magnificent Lingaraj Temple, a classic example of Kalinga architecture dedicated to Lord Shiva. Explore the Odisha State Museum to get an overview of the region’s history, art, and culture."
     },
     {
-      day: 2,
-      title: "Konark Sun Temple",
-      description: "Explore the UNESCO World Heritage Site and local crafts village."
+      "day": 2,
+      "title": "Konark Sun Temple",
+      "description": "Visit the iconic UNESCO World Heritage Site, the Sun Temple at Konark, known for its exquisite stone carvings and chariot-like structure. Explore the nearby crafts village, famous for traditional appliqué work and handloom textiles."
     },
     {
-      day: 3,
-      title: "Puri Beach & Jagannath Temple",
-      description: "Visit the sacred temple and relax on Puri’s golden beaches."
+      "day": 3,
+      "title": "Puri Beach & Jagannath Temple",
+      "description": "Travel to Puri, a sacred pilgrimage town. Visit the famous Jagannath Temple, one of the Char Dham pilgrimage sites, and witness the devotional rituals. Spend the afternoon relaxing on the golden sands of Puri Beach, soaking up the coastal charm."
     },
     {
-      day: 4,
-      title: "Chilika Lake",
-      description: "Boat ride on Asia’s largest brackish water lagoon; bird watching and dolphin spotting."
+      "day": 4,
+      "title": "Chilika Lake",
+      "description": "Enjoy a boat ride on Chilika Lake, Asia’s largest brackish water lagoon, renowned for its diverse birdlife including migratory flamingos and spot dolphins in the clear waters. Experience the tranquil natural surroundings and rich biodiversity."
     },
     {
-      day: 5,
-      title: "Departure",
-      description: "Check-out and airport transfer."
+      "day": 5,
+      "title": "Departure",
+      "description": "After breakfast, check out and transfer to the airport for your onward journey, taking home the peaceful and cultural essence of Odisha."
     }
   ]
 },
 
 {
-  id: "punjab-heritage-experience",
-  name: "Punjab Heritage Experience",
-  location: "Punjab, India",
-  description: "Discover Punjab’s vibrant culture, golden fields, historic forts, and delicious cuisine.",
-  image: "https://ihplb.b-cdn.net/wp-content/uploads/2024/04/Best-Places-to-Visit-in-Punjab-in-April.jpg",
-  category: "cultural",
-  price: 33000,
-  rating: 4.6,
-  duration: "4 days",
-  includes: [
+  "id": "punjab-heritage-experience",
+  "name": "Punjab Heritage Experience",
+  "location": "Punjab, India",
+  "description": "Discover Punjab’s vibrant culture, golden fields, historic forts, and delicious cuisine.",
+  "image": "https://ihplb.b-cdn.net/wp-content/uploads/2024/04/Best-Places-to-Visit-in-Punjab-in-April.jpg",
+  "category": "cultural",
+  "price": 33000,
+  "rating": 4.6,
+  "duration": "4 days",
+  "includes": [
     "3 nights hotel accommodation",
     "Daily breakfast",
     "Guided city tours",
@@ -795,131 +795,133 @@ export const destinations: Destination[] = [
     "Traditional Punjabi meal",
     "Wagah Border ceremony"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Amritsar Arrival",
-      description: "Visit the Golden Temple and Jallianwala Bagh."
+      "day": 1,
+      "title": "Amritsar Arrival",
+      "description": "Arrive in Amritsar and visit the magnificent Golden Temple, the spiritual heart of Sikhism, where you can witness the serene holy rituals and community kitchen. Later, explore the historic Jallianwala Bagh memorial, a poignant reminder of India’s struggle for independence."
     },
     {
-      day: 2,
-      title: "Wagah Border & Local Markets",
-      description: "Witness the Wagah border ceremony and explore Amritsar bazaars."
+      "day": 2,
+      "title": "Wagah Border & Local Markets",
+      "description": "Experience the electrifying Wagah Border ceremony, a daily military parade symbolizing the India-Pakistan border spirit. In the afternoon, stroll through the bustling Amritsar bazaars, famous for vibrant textiles, traditional phulkari embroidery, and delicious street food."
     },
     {
-      day: 3,
-      title: "Patiala Day Trip",
-      description: "Explore Qila Mubarak fort and royal gardens."
+      "day": 3,
+      "title": "Patiala Day Trip",
+      "description": "Take a day trip to Patiala, known for its royal heritage. Visit Qila Mubarak, a majestic fort blending Mughal and Rajput architecture, and relax in the beautifully landscaped royal gardens. Don’t miss tasting the local delicacies and traditional Punjabi hospitality."
     },
     {
-      day: 4,
-      title: "Departure",
-      description: "Check-out and transfer."
+      "day": 4,
+      "title": "Departure",
+      "description": "Enjoy a final breakfast before checking out and transferring to your onward destination, taking with you rich memories of Punjab’s heritage and warmth."
     }
   ]
 },
 
 {
-  id: "sikkim-darjeeling-mountain-retreat",
-  name: "Sikkim & Darjeeling Mountain Retreat",
-  location: "Sikkim & Darjeeling, India",
-  description: "Experience serene Himalayan views, tea gardens, and Buddhist monasteries in Sikkim and Darjeeling.",
-  image: "https://images.pexels.com/photos/3275010/pexels-photo-3275010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "mountain",
-  price: 68000,
-  rating: 4.8,
-  duration: "6 days",
-  includes: [
+  "id": "sikkim-darjeeling-mountain-retreat",
+  "name": "Sikkim & Darjeeling Mountain Retreat",
+  "location": "Sikkim & Darjeeling, India",
+  "description": "Experience serene Himalayan views, tea gardens, and Buddhist monasteries in Sikkim and Darjeeling.",
+  "image": "https://images.pexels.com/photos/3275010/pexels-photo-3275010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "mountain",
+  "price": 68000,
+  "rating": 4.8,
+  "duration": "6 days",
+  "includes": [
     "5 nights mountain lodge stays",
     "Daily breakfast and lunch",
     "Guided monastery tours",
     "Visit to Tiger Hill sunrise",
     "Tea garden visit and tasting"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Gangtok Arrival",
-      description: "Explore MG Road and visit Enchey Monastery."
+      "day": 1,
+      "title": "Gangtok Arrival",
+      "description": "Arrive in Gangtok, the vibrant capital of Sikkim. Explore MG Road’s lively markets filled with local handicrafts and savor authentic Sikkimese cuisine. Visit Enchey Monastery, a serene Buddhist site offering insight into local spiritual practices."
     },
     {
-      day: 2,
-      title: "Tsomgo Lake & Baba Mandir",
-      description: "Visit high-altitude lake and spiritual sites."
+      "day": 2,
+      "title": "Tsomgo Lake & Baba Mandir",
+      "description": "Journey to the stunning high-altitude Tsomgo Lake, surrounded by snow-capped mountains. Experience the tranquil beauty of the glacial lake, then visit Baba Mandir, a revered shrine dedicated to a brave Indian soldier, offering breathtaking views and cultural significance."
     },
     {
-      day: 3,
-      title: "Darjeeling Drive",
-      description: "Travel to Darjeeling. Visit Peace Pagoda and local markets."
+      "day": 3,
+      "title": "Darjeeling Drive",
+      "description": "Travel to the charming hill station of Darjeeling, known for its cool climate and colonial architecture. Visit the Peace Pagoda, a symbol of harmony, and browse the bustling local markets for exquisite teas and souvenirs."
     },
     {
-      day: 4,
-      title: "Tiger Hill Sunrise",
-      description: "Early morning visit to Tiger Hill for Himalayan sunrise views."
+      "day": 4,
+      "title": "Tiger Hill Sunrise",
+      "description": "Wake up early for an unforgettable sunrise at Tiger Hill, where you can witness panoramic views of the majestic Kanchenjunga and other Himalayan peaks. Return to Darjeeling to relax and explore the town’s quaint cafes."
     },
     {
-      day: 5,
-      title: "Tea Gardens & Batasia Loop",
-      description: "Tour famous tea estates and scenic railway loop."
+      "day": 5,
+      "title": "Tea Gardens & Batasia Loop",
+      "description": "Spend the day touring the lush tea estates that produce some of the world’s finest teas. Enjoy a tea tasting session to appreciate the unique flavors. Visit Batasia Loop, a scenic railway loop offering beautiful views and a war memorial commemorating Gorkha soldiers."
     },
     {
-      day: 6,
-      title: "Departure",
-      description: "Check-out and transfer to airport/railway station."
+      "day": 6,
+      "title": "Departure",
+      "description": "After breakfast, check out and transfer to the airport or railway station, carrying with you the serene memories of the Himalayan mountain retreat."
     }
   ]
 },
 
+
 {
-  id: "tamil-nadu-temples-and-beaches",
-  name: "Tamil Nadu Temples and Beaches",
-  location: "Tamil Nadu, India",
-  description: "Explore ancient temples, vibrant culture, and beautiful beaches of Tamil Nadu.",
-  image: "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  category: "cultural",
-  price: 26000,
-  rating: 4.5,
-  duration: "6 days",
-  includes: [
+  "id": "tamil-nadu-temples-and-beaches",
+  "name": "Tamil Nadu Temples and Beaches",
+  "location": "Tamil Nadu, India",
+  "description": "Explore ancient temples, vibrant culture, and beautiful beaches of Tamil Nadu.",
+  "image": "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "cultural",
+  "price": 26000,
+  "rating": 4.5,
+  "duration": "6 days",
+  "includes": [
     "5 nights hotel accommodation",
     "Daily breakfast",
     "Temple tours with expert guides",
     "Beach day at Mahabalipuram",
     "Cultural dance show"
   ],
-  itinerary: [
+  "itinerary": [
     {
-      day: 1,
-      title: "Chennai Arrival",
-      description: "Visit Kapaleeshwarar Temple and Marina Beach."
+      "day": 1,
+      "title": "Chennai Arrival",
+      "description": "Arrive in Chennai and start your journey with a visit to the iconic Kapaleeshwarar Temple, a stunning example of Dravidian architecture with its vibrant gopuram. Later, unwind at Marina Beach, the longest urban beach in India, where you can enjoy the sunset and local street food."
     },
     {
-      day: 2,
-      title: "Mahabalipuram",
-      description: "Explore Shore Temple and beachside rock carvings."
+      "day": 2,
+      "title": "Mahabalipuram",
+      "description": "Spend the day exploring the UNESCO World Heritage Site of Mahabalipuram. Discover the intricate carvings of the Shore Temple and marvel at the impressive rock reliefs depicting stories from ancient Indian mythology. Enjoy some leisure time on the beautiful beach, soaking in the serene atmosphere."
     },
     {
-      day: 3,
-      title: "Pondicherry",
-      description: "Visit French Quarter, Auroville, and serene beaches."
+      "day": 3,
+      "title": "Pondicherry",
+      "description": "Travel to the charming town of Pondicherry, famous for its French colonial heritage. Wander through the quaint streets of the French Quarter, visit the spiritual community of Auroville, and relax on the peaceful beaches. Savor delicious French and Tamil fusion cuisine at local cafes."
     },
     {
-      day: 4,
-      title: "Thanjavur",
-      description: "Explore Brihadeeswarar Temple and local markets."
+      "day": 4,
+      "title": "Thanjavur",
+      "description": "Explore Thanjavur, known as the cultural capital of Tamil Nadu. Visit the majestic Brihadeeswarar Temple, a masterpiece of Chola architecture with its towering vimana. Explore bustling local markets for traditional handicrafts and experience the rich cultural heritage through local art and music."
     },
     {
-      day: 5,
-      title: "Madurai",
-      description: "Visit Meenakshi Temple and attend evening aarti."
+      "day": 5,
+      "title": "Madurai",
+      "description": "Visit Madurai, one of the oldest continuously inhabited cities in the world. Tour the magnificent Meenakshi Temple, renowned for its stunning sculptures and vibrant festivals. Attend the evening aarti, a devotional ritual filled with music and lights that offers a unique spiritual experience."
     },
     {
-      day: 6,
-      title: "Departure",
-      description: "Check-out and transfer."
+      "day": 6,
+      "title": "Departure",
+      "description": "After breakfast, check out from the hotel and proceed with your transfer to the airport or railway station, taking with you unforgettable memories of Tamil Nadu’s temples and beaches."
     }
   ]
 }
+
 
 
 
