@@ -18,6 +18,55 @@ interface Flight {
   cabin: string;
 }
 
+const generateRandomFlights = (origin: string, destination: string, count: number = 10): Flight[] => {
+  const airlines = ['SpiceJet', 'IndiGo', 'Air India', 'Vistara', 'AirAsia'];
+  const cabinTypes = ['Economy', 'Premium Economy', 'Business', 'First'];
+  const flights: Flight[] = [];
+
+  for (let i = 0; i < count; i++) {
+    const airline = airlines[Math.floor(Math.random() * airlines.length)];
+    const flightNumber = `${airline.substring(0, 2).toUpperCase()}${100 + Math.floor(Math.random() * 900)}`;
+    
+    // Generate random departure time between 6 AM and 10 PM
+    const hour = 6 + Math.floor(Math.random() * 16);
+    const minute = Math.floor(Math.random() * 60);
+    const departureTime = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+    
+    // Random duration between 1-5 hours
+    const durationHours = 1 + Math.floor(Math.random() * 4);
+    const durationMinutes = Math.floor(Math.random() * 60);
+    
+    // Calculate arrival time
+    const arrivalHour = (hour + durationHours) % 24;
+    const arrivalMinute = (minute + durationMinutes) % 60;
+    const arrivalTime = `${arrivalHour.toString().padStart(2, '0')}:${arrivalMinute.toString().padStart(2, '0')}`;
+    
+    const cabin = cabinTypes[Math.floor(Math.random() * cabinTypes.length)];
+    
+    // Base price between 2000-10000
+    let price = 2000 + Math.floor(Math.random() * 8000);
+    if (cabin === 'Premium Economy') price *= 1.5;
+    if (cabin === 'Business') price *= 2.5;
+    if (cabin === 'First') price *= 4;
+
+    flights.push({
+      id: `flight-${i}`,
+      airline,
+      flightNumber,
+      departureTime,
+      arrivalTime,
+      origin,
+      destination,
+      duration: `${durationHours}h ${durationMinutes}m`,
+      price: Math.round(price / 100) * 100,
+      seatsAvailable: 10 + Math.floor(Math.random() * 90),
+      cabin
+    });
+  }
+
+  return flights;
+};
+
 const FlightBooking = () => {
   const [searchParams] = useSearchParams();
   const [flights, setFlights] = useState<Flight[]>([]);
@@ -50,39 +99,22 @@ const FlightBooking = () => {
       setLoading(true);
       setError('');
       
-      // For demo, we'll use mock data from our in-memory database
-      const response = await fetch('http://localhost:8000/api/flights/search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          origin,
-          destination,
-          date: departureDate,
-          return_date: returnDate,
-          travelers
-        }),
-      });
+      // Generate random flights instead of API call
+      const randomFlights = generateRandomFlights(origin, destination);
+      setFlights(randomFlights);
       
-      if (response.ok) {
-        const data = await response.json();
-        setFlights(data);
-        
-        // Set price range based on available flights
-        if (data.length > 0) {
-          const prices = data.map((flight: Flight) => flight.price);
-          const minPrice = Math.min(...prices);
-          const maxPrice = Math.max(...prices);
-          setPriceRange([minPrice, maxPrice]);
-        }
-        
-        // Get unique airlines
-        const airlines = [...new Set(data.map((flight: Flight) => flight.airline))];
-        setSelectedAirlines(airlines);
-      } else {
-        setError('Failed to fetch flights');
+      // Set price range based on available flights
+      if (randomFlights.length > 0) {
+        const prices = randomFlights.map(flight => flight.price);
+        const minPrice = Math.min(...prices);
+        const maxPrice = Math.max(...prices);
+        setPriceRange([minPrice, maxPrice]);
       }
+      
+      // Get unique airlines
+      const airlines = [...new Set(randomFlights.map(flight => flight.airline))];
+      setSelectedAirlines(airlines);
+      
     } catch (err) {
       setError('An error occurred while searching for flights');
       console.error(err);
