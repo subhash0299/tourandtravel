@@ -18,6 +18,54 @@ interface BusData {
   busType: string;
 }
 
+const generateRandomBuses = (origin: string, destination: string, count: number = 8): BusData[] => {
+  const operators = ['RedBus', 'Volvo Travels', 'SRS Travels', 'VRL Travels', 'KPN Travels'];
+  const busTypes = ['Seater', 'Sleeper', 'Semi-Sleeper', 'AC', 'Non-AC'];
+  const buses: BusData[] = [];
+
+  for (let i = 0; i < count; i++) {
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    const busNumber = `${operator.substring(0, 2).toUpperCase()}${100 + Math.floor(Math.random() * 900)}`;
+    
+    // Generate random departure time between 6 PM and 11 PM (common for overnight buses)
+    const hour = 18 + Math.floor(Math.random() * 5);
+    const minute = Math.floor(Math.random() * 60);
+    const departureTime = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+    
+    // Random duration between 4-12 hours
+    const durationHours = 4 + Math.floor(Math.random() * 8);
+    const durationMinutes = Math.floor(Math.random() * 60);
+    
+    // Calculate arrival time
+    const arrivalHour = (hour + durationHours) % 24;
+    const arrivalMinute = (minute + durationMinutes) % 60;
+    const arrivalTime = `${arrivalHour.toString().padStart(2, '0')}:${arrivalMinute.toString().padStart(2, '0')}`;
+    
+    const busType = busTypes[Math.floor(Math.random() * busTypes.length)];
+    
+    // Base price between 500-2500
+    let price = 500 + Math.floor(Math.random() * 2000);
+    if (busType === 'Sleeper') price *= 1.3;
+    if (busType === 'AC') price *= 1.5;
+
+    buses.push({
+      id: `bus-${i}`,
+      operator,
+      busNumber,
+      departureTime,
+      arrivalTime,
+      origin,
+      destination,
+      duration: `${durationHours}h ${durationMinutes}m`,
+      price: Math.round(price / 10) * 10,
+      seatsAvailable: 5 + Math.floor(Math.random() * 35),
+      busType
+    });
+  }
+
+  return buses;
+};
+
 const BusBooking = () => {
   const [searchParams] = useSearchParams();
   const [buses, setBuses] = useState<BusData[]>([]);
@@ -49,38 +97,22 @@ const BusBooking = () => {
       setLoading(true);
       setError('');
       
-      // For demo, we'll use mock data from our in-memory database
-      const response = await fetch('http://localhost:8000/api/buses/search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          origin,
-          destination,
-          date: departureDate,
-          travelers
-        }),
-      });
+      // Generate random buses instead of API call
+      const randomBuses = generateRandomBuses(origin, destination);
+      setBuses(randomBuses);
       
-      if (response.ok) {
-        const data = await response.json();
-        setBuses(data);
-        
-        // Set price range based on available buses
-        if (data.length > 0) {
-          const prices = data.map((bus: BusData) => bus.price);
-          const minPrice = Math.min(...prices);
-          const maxPrice = Math.max(...prices);
-          setPriceRange([minPrice, maxPrice]);
-        }
-        
-        // Get unique operators
-        const operators = [...new Set(data.map((bus: BusData) => bus.operator))];
-        setSelectedOperators(operators);
-      } else {
-        setError('Failed to fetch buses');
+      // Set price range based on available buses
+      if (randomBuses.length > 0) {
+        const prices = randomBuses.map(bus => bus.price);
+        const minPrice = Math.min(...prices);
+        const maxPrice = Math.max(...prices);
+        setPriceRange([minPrice, maxPrice]);
       }
+      
+      // Get unique operators
+      const operators = [...new Set(randomBuses.map(bus => bus.operator))];
+      setSelectedOperators(operators);
+      
     } catch (err) {
       setError('An error occurred while searching for buses');
       console.error(err);
