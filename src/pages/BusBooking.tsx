@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Bus, Filter, AlertCircle, Clock, Star, ArrowRight } from 'lucide-react';
+import { Bus, Filter, AlertCircle, Clock, Star, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import SearchForm from '../components/shared/SearchForm';
 import { format } from 'date-fns';
 
@@ -75,6 +75,7 @@ const BusBooking = () => {
   const [selectedOperators, setSelectedOperators] = useState<string[]>([]);
   const [busType, setBusType] = useState<string>('all');
   const [priceRange, setPriceRange] = useState([0, 3000]);
+  const [showSearchForm, setShowSearchForm] = useState(true);
   
   // Get search params
   const origin = searchParams.get('origin') || '';
@@ -89,6 +90,7 @@ const BusBooking = () => {
   useEffect(() => {
     if (origin && destination && departureDate) {
       searchBuses();
+      setShowSearchForm(false);
     }
   }, [origin, destination, departureDate]);
   
@@ -160,9 +162,26 @@ const BusBooking = () => {
       </section>
 
       {/* Search Form Section */}
-      <section className="py-8 bg-white shadow-md sticky top-16 z-20">
+      <section className={`py-8 bg-white shadow-md sticky top-16 z-20 transition-all duration-300 ${showSearchForm ? 'h-auto' : 'h-16 overflow-hidden'}`}>
         <div className="container">
-          <div className="bg-white p-6 rounded-lg">
+          <div className="flex justify-between items-center mb-4">
+            {!showSearchForm && (
+              <div className="text-sm text-gray-600">
+                {origin} → {destination} · {formattedDepartureDate} · {travelers} {travelers === 1 ? 'Traveler' : 'Travelers'}
+              </div>
+            )}
+            <button
+              onClick={() => setShowSearchForm(!showSearchForm)}
+              className="btn-secondary ml-auto"
+            >
+              {showSearchForm ? (
+                <ChevronUp className="h-5 w-5" />
+              ) : (
+                <ChevronDown className="h-5 w-5" />
+              )}
+            </button>
+          </div>
+          <div className={`transition-all duration-300 ${showSearchForm ? 'opacity-100' : 'opacity-0'}`}>
             <SearchForm defaultType="bus" />
           </div>
         </div>
@@ -245,7 +264,8 @@ const BusBooking = () => {
                     min={Math.min(...buses.map(b => b.price))}
                     max={Math.max(...buses.map(b => b.price))}
                     value={priceRange[1]}
-                    onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
+                    onChange={(e) => setPriceRange([priceRange[0],
+                    parseInt(e.target.value)])}
                     className="w-full"
                   />
                 </div>
