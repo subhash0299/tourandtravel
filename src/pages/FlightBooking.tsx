@@ -351,7 +351,7 @@ const FlightBooking = () => {
                           
                           <div className="flex flex-col md:flex-row justify-between items-center pt-4 border-t border-gray-100">
                             <div className="mb-4 md:mb-0">
-                              <p className="text-2xl font-bold text-primary-950">${flight.price}</p>
+                              <p className="text-2xl font-bold text-primary-950">₹{flight.price}</p>
                               <p className="text-xs text-gray-500">per person</p>
                             </div>
                             
