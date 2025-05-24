@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Calendar, MapPin, Search } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { format } from 'date-fns';
 
 type SearchType = 'destination' | 'flight' | 'bus';
 type FlightType = 'one-way' | 'round-trip';
@@ -29,6 +30,9 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
   const [flightType, setFlightType] = useState<FlightType>('one-way');
   
   const navigate = useNavigate();
+
+  // Get today's date in YYYY-MM-DD format for min date attribute
+  const today = format(new Date(), 'yyyy-MM-dd');
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -70,6 +74,17 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
   const handleClickOutside = () => {
     setShowOriginDropdown(false);
     setShowDestinationDropdown(false);
+  };
+
+  // Handle departure date change
+  const handleDepartureDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newDepartureDate = e.target.value;
+    setDepartureDate(newDepartureDate);
+    
+    // If return date is before new departure date, reset it
+    if (returnDate && returnDate < newDepartureDate) {
+      setReturnDate('');
+    }
   };
   
   return (
@@ -235,7 +250,8 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
                     id="departureDate"
                     className="input pl-10"
                     value={departureDate}
-                    onChange={(e) => setDepartureDate(e.target.value)}
+                    onChange={handleDepartureDateChange}
+                    min={today}
                     required
                   />
                   <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
@@ -253,6 +269,7 @@ const SearchForm = ({ defaultType = 'destination' }: { defaultType?: SearchType 
                       className="input pl-10"
                       value={returnDate}
                       onChange={(e) => setReturnDate(e.target.value)}
+                      min={departureDate || today}
                       required={flightType === 'round-trip'}
                     />
                     <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
