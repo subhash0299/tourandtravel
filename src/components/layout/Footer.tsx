@@ -10,10 +10,24 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand and description */}
           <div>
+            {/*}
             <Link to="/" className="flex items-center gap-2 mb-4">
               <Globe className="h-6 w-6" />
               <span className="text-xl font-bold">Travanta</span>
             </Link>
+            */}
+
+           
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img
+                src="/whitelogo.PNG"
+                alt="Travanta Logo"
+                className="h-14 w-14 rounded-full object-cover"
+              />
+              <span className="text-xl font-bold">Travanta</span>
+            </Link>
+
+
             <p className="text-gray-300 mb-6">
               Travel with us and experience the joy of discovery. Our expert team crafts unforgettable journeys customized to your preferences.
             </p>

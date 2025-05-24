@@ -16,7 +16,13 @@ const Hero = () => {
       </div>
       
       <div className="container relative z-10">
-        <div className="max-w-3xl fade-in">
+        {/* Logo at the top of the Hero section */}
+        <img
+          src="/whitelogo.PNG"
+          alt="Travanta Logo"
+          className="h-32 w-32 mb-8 rounded-full object-cover"
+        />
+              <div className="max-w-3xl fade-in">
           <span className="inline-block text-secondary-500 text-lg md:text-xl font-medium mb-4">
             Your Journey Begins Here
           </span>

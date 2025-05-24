@@ -130,7 +130,7 @@ const Destinations = () => {
                   <button
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-3 py-1 rounded-full text-sm transition-colors ₹{
+                    className={`px-3 py-1 rounded-full text-sm transition-colors ${
                       activeCategory === category.id
                         ? 'bg-primary-950 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -167,7 +167,7 @@ const Destinations = () => {
                     <button
                       key={category.id}
                       onClick={() => setActiveCategory(category.id)}
-                      className={`px-3 py-1 rounded-full text-sm transition-colors ₹{
+                      className={`px-3 py-1 rounded-full text-sm transition-colors ${
                         activeCategory === category.id
                           ? 'bg-primary-950 text-white'
                           : 'bg-white text-gray-700 border border-gray-300'
@@ -192,7 +192,7 @@ const Destinations = () => {
                     className="w-full"
                   />
                   <span className="whitespace-nowrap">
-                    Up to ₹{priceRange[1]}
+                    Up to ${priceRange[1]}
                   </span>
                 </div>
               </div>

@@ -34,9 +34,9 @@ const AboutSection = () => {
 
           {/* Content Side */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">About Wanderlust</h2>
+            <h2 className="text-3xl font-bold mb-6">About Travanta</h2>
             <p className="text-gray-600 mb-6">
-              Since 2010, Travanta has been crafting unforgettable travel experiences for adventurers from around the world. What started as a passion project has grown into a company that serves thousands of travelers each year.
+              Since 2025, Travanta has been crafting unforgettable travel experiences for adventurers from around the world. What started as a passion project has grown into a company that serves thousands of travelers each year.
             </p>
             <p className="text-gray-600 mb-8">
               Our mission is simple: to transform ordinary trips into extraordinary experiences. We believe in creating meaningful connections with diverse cultures, cuisines, landscapes, and traditions.

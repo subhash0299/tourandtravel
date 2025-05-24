@@ -74,7 +74,48 @@ export const destinations: Destination[] = [
         description: "After breakfast, transfer to the airport for your onward journey. Carry with you the unforgettable memories of Rajasthan’s royal heritage, vibrant culture, and breathtaking landscapes."
       }
     ]
-  },
+  }
+  ,
+{
+  "id": "mumbai-city-explorer",
+  "name": "Mumbai City Explorer",
+  "location": "Mumbai, Maharashtra, India",
+  "description": "Discover the fast-paced charm of Mumbai – from iconic landmarks to Bollywood vibes.",
+  "image": "https://images.pexels.com/photos/5414583/pexels-photo-5414583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 22000,
+  "rating": 4.5,
+  "duration": "4 days",
+  "includes": [
+    "3 nights hotel stay",
+    "City tour with guide",
+    "Gateway of India and Marine Drive",
+    "Bollywood studio visit",
+    "Street food walk"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Marine Drive",
+      "description": "Arrive in Mumbai and enjoy a relaxing evening stroll along Marine Drive. Capture views of the Queen's Necklace and taste street food at Chowpatty Beach."
+    },
+    {
+      "day": 2,
+      "title": "City Tour & Heritage",
+      "description": "Visit iconic spots like Gateway of India, CST Station, Colaba Causeway, and Hanging Gardens. End the day at Bandra Fort with views of the Bandra-Worli Sea Link."
+    },
+    {
+      "day": 3,
+      "title": "Bollywood & Dharavi Walk",
+      "description": "Experience a guided tour of a Bollywood studio and learn about India's film industry. Optional Dharavi slum tour for cultural insight and local craft shopping."
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "After breakfast, check out and transfer to the airport or station, taking unforgettable Mumbai moments with you."
+    }
+  ]
+},
   {
     id: "kerala-backwaters",
     name: "Kerala Backwaters Cruise",
@@ -389,7 +430,48 @@ export const destinations: Destination[] = [
     description: "Before your flight, visit the Anthropological Museum to learn about the indigenous tribes and culture of the Andaman Islands. Then transfer to the airport for your onward journey."
   }
     ]
-  },
+  }
+  ,
+{
+  "id": "delhi-heritage-and-modern-tour",
+  "name": "Delhi Heritage and Modern Tour",
+  "location": "Delhi, India",
+  "description": "Uncover Delhi’s mix of Mughal history, colonial charm, and urban buzz in this cultural capital.",
+  "image": "https://images.pexels.com/photos/13701731/pexels-photo-13701731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 20000,
+  "rating": 4.6,
+  "duration": "4 days",
+  "includes": [
+    "3 nights stay",
+    "Old and New Delhi city tour",
+    "Qutub Minar & Red Fort visit",
+    "Rickshaw ride in Chandni Chowk",
+    "Local food tasting"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & India Gate",
+      "description": "Arrive and visit India Gate, Connaught Place, and enjoy dinner at a classic Delhi dhaba."
+    },
+    {
+      "day": 2,
+      "title": "Old Delhi Tour",
+      "description": "Explore Red Fort, Jama Masjid, and Raj Ghat. Take a rickshaw ride through Chandni Chowk and taste local chaats and parathas."
+    },
+    {
+      "day": 3,
+      "title": "New Delhi Highlights",
+      "description": "Visit Humayun’s Tomb, Lotus Temple, Qutub Minar, and drive past the Rashtrapati Bhavan and Parliament House."
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "After breakfast, check out and leave for your onward journey filled with Delhi’s vibrant memories."
+    }
+  ]
+},
   {
     id: "ladakh-wilderness",
     name: "Ladakh Wilderness Expedition",
@@ -494,6 +576,42 @@ export const destinations: Destination[] = [
     description: "Spend your final morning exploring Agra’s famous marble markets, where you can shop for exquisite marble handicrafts, jewelry, and souvenirs. Afterward, transfer to your onward destination, taking with you unforgettable memories of your time in Agra."
   }
   ]
+}
+,
+{
+  "id": "bangalore-tech-and-green-tour",
+  "name": "Bangalore Tech & Green Tour",
+  "location": "Bangalore, Karnataka, India",
+  "description": "Experience the silicon valley of India with its gardens, temples, and booming tech scene.",
+  "image": "https://images.pexels.com/photos/5670955/pexels-photo-5670955.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 19000,
+  "rating": 4.4,
+  "duration": "3 days",
+  "includes": [
+    "2 nights stay",
+    "City tour with guide",
+    "Lalbagh and Cubbon Park visit",
+    "Vidhana Soudha and Bull Temple",
+    "Tech hub drive-through"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Parks",
+      "description": "Check in and visit Lalbagh Botanical Garden and Cubbon Park. Spend your evening at MG Road and Brigade Road shopping streets."
+    },
+    {
+      "day": 2,
+      "title": "Historical and Tech Tour",
+      "description": "Explore Vidhana Soudha, ISKCON Temple, Bull Temple, and pass by the tech parks and start-up hubs of Whitefield and Electronic City."
+    },
+    {
+      "day": 3,
+      "title": "Departure",
+      "description": "Check out after breakfast and head to the airport or station. Optional visit to Bangalore Palace if time permits."
+    }
+  ]
 },
 {
   "id": "udaipur-lakes-palaces",
@@ -579,6 +697,47 @@ export const destinations: Destination[] = [
       "day": 5,
       "title": "Departure",
       "description": "After a leisurely breakfast, check out and transfer by speedboat to the airport, bidding farewell to your island paradise."
+    }
+  ]
+}
+,
+{
+  "id": "jaipur-royal-palace-tour",
+  "name": "Jaipur Royal Palace Tour",
+  "location": "Jaipur, Rajasthan, India",
+  "description": "Explore the Pink City's grand palaces, forts, and vibrant bazaars.",
+  "image": "https://images.pexels.com/photos/3581369/pexels-photo-3581369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 23000,
+  "rating": 4.8,
+  "duration": "4 days",
+  "includes": [
+    "3 nights royal stay",
+    "Amber Fort & Hawa Mahal visit",
+    "Guided city palace tour",
+    "Bazaar shopping walk",
+    "Cultural folk dance dinner"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Markets",
+      "description": "Arrive and settle in. Visit local bazaars like Johari and Bapu Bazaar for handicrafts and traditional wear."
+    },
+    {
+      "day": 2,
+      "title": "Amber Fort & Jal Mahal",
+      "description": "Tour the majestic Amber Fort, take photos at Jal Mahal, and ride an elephant or jeep uphill."
+    },
+    {
+      "day": 3,
+      "title": "City Palace & Cultural Show",
+      "description": "Visit City Palace, Jantar Mantar, and Hawa Mahal. End the day with a cultural dinner featuring Rajasthani music and dance."
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "Check out and transfer to airport/station with regal memories of Jaipur."
     }
   ]
 },
@@ -673,8 +832,48 @@ export const destinations: Destination[] = [
       "description": "After breakfast, check out from your hotel and begin your return journey with fond memories of the tranquil hills and scenic beauty of Nainital."
     }
   ]
+}
+,
+{
+  "id": "kolkata-heritage-walk",
+  "name": "Kolkata Heritage Walk",
+  "location": "Kolkata, West Bengal, India",
+  "description": "Take a cultural stroll through colonial architecture, temples, and Bengali flavors.",
+  "image": "https://images.pexels.com/photos/18583118/pexels-photo-18583118/free-photo-of-hindustan-ambassador-taxi-on-street-in-kolkata.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 18000,
+  "rating": 4.5,
+  "duration": "4 days",
+  "includes": [
+    "3 nights stay",
+    "Victoria Memorial & Howrah Bridge visit",
+    "Heritage tram ride",
+    "Kumartuli artist walk",
+    "Street food tour"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Riverfront",
+      "description": "Arrive and walk along the Hooghly riverfront near Prinsep Ghat. Enjoy the lit-up Howrah Bridge at night."
+    },
+    {
+      "day": 2,
+      "title": "Colonial Kolkata",
+      "description": "Visit Victoria Memorial, St. Paul’s Cathedral, and take a tram ride through colonial streets."
+    },
+    {
+      "day": 3,
+      "title": "Culture & Cuisine",
+      "description": "Tour the Indian Museum, visit Kumartuli to see idol-making, and enjoy street food at Park Street and New Market."
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "Check out and depart with the soulful essence of Kolkata."
+    }
+  ]
 },
-
 {
   "id": "north-east-adventure",
   "name": "North East Adventure",
@@ -776,6 +975,52 @@ export const destinations: Destination[] = [
     }
   ]
 },
+{
+  "id": "tirupati-rameswaram-spiritual-tour",
+  "name": "Tirupati & Rameswaram Spiritual Tour",
+  "location": "Andhra Pradesh & Tamil Nadu, India",
+  "description": "A sacred journey through South India’s most revered pilgrimage destinations – Tirupati and Rameswaram.",
+  "image": "https://images.pexels.com/photos/18287947/pexels-photo-18287947/free-photo-of-view-of-arulmigu-ramanathaswamy-temple-in-rameshwaram.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "cultural",
+  "price": 27000,
+  "rating": 4.7,
+  "duration": "5 days",
+  "includes": [
+    "4 nights hotel accommodation",
+    "VIP Darshan at Tirumala",
+    "Ramanathaswamy Temple visit",
+    "Local transportation and transfers",
+    "Guided tours and spiritual rituals"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Tirupati",
+      "description": "Arrive in Tirupati and check into your hotel. In the evening, visit the Padmavathi Temple and relax to prepare for the Tirumala darshan the next day."
+    },
+    {
+      "day": 2,
+      "title": "Tirumala Temple Visit",
+      "description": "Begin early for a VIP darshan of Lord Venkateswara at Tirumala. After darshan, visit nearby sacred spots like Akasa Ganga and Papavinasam."
+    },
+    {
+      "day": 3,
+      "title": "Travel to Rameswaram",
+      "description": "Depart from Tirupati and head to Rameswaram. Enjoy scenic views during your journey. Check in to your hotel and rest for the night."
+    },
+    {
+      "day": 4,
+      "title": "Ramanathaswamy Temple & Dhanushkodi",
+      "description": "Perform rituals and darshan at the Ramanathaswamy Temple. Later, explore Dhanushkodi, the ghost town where the land ends and the ocean begins."
+    },
+    {
+      "day": 5,
+      "title": "Pamban Bridge & Departure",
+      "description": "On your final day, visit the iconic Pamban Bridge for amazing views. Shop for seashell crafts before heading to your onward destination."
+    }
+  ]
+}
+,
 
 {
   "id": "punjab-heritage-experience",
@@ -920,9 +1165,136 @@ export const destinations: Destination[] = [
       "description": "After breakfast, check out from the hotel and proceed with your transfer to the airport or railway station, taking with you unforgettable memories of Tamil Nadu’s temples and beaches."
     }
   ]
+},
+{
+  "id": "uttarakhand-nature-and-spirituality",
+  "name": "Uttarakhand Nature and Spirituality",
+  "location": "Uttarakhand, India",
+  "description": "Discover the spiritual towns and scenic beauty of Uttarakhand, from the Ganges ghats to the Himalayas.",
+  "image": "https://images.pexels.com/photos/2070307/pexels-photo-2070307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "mountain",
+  "price": 25000,
+  "rating": 4.6,
+  "duration": "6 days",
+  "includes": [
+    "5 nights accommodation",
+    "Daily breakfast",
+    "Ganga Aarti in Haridwar",
+    "Trekking and local transport",
+    "Temple visits with guide"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Haridwar Arrival",
+      "description": "Arrive in Haridwar and attend the mesmerizing Ganga Aarti at Har Ki Pauri. Stroll along the ghats and enjoy the spiritual ambiance."
+    },
+    {
+      "day": 2,
+      "title": "Rishikesh",
+      "description": "Explore Rishikesh, visit Laxman Jhula, and enjoy yoga or river rafting. Visit the Beatles Ashram for a spiritual and artistic vibe."
+    },
+    {
+      "day": 3,
+      "title": "Mussoorie",
+      "description": "Travel to Mussoorie, the ‘Queen of Hills.’ Enjoy a walk on Mall Road and visit Kempty Falls for a refreshing day out."
+    },
+    {
+      "day": 4,
+      "title": "Dhanaulti",
+      "description": "Head to Dhanaulti for peaceful forest walks and panoramic mountain views. Visit the Eco Park and relax in the crisp mountain air."
+    },
+    {
+      "day": 5,
+      "title": "Dehradun",
+      "description": "Explore Dehradun’s attractions including Robber’s Cave and the Mindrolling Monastery. Enjoy some shopping at the local bazaar."
+    },
+    {
+      "day": 6,
+      "title": "Departure",
+      "description": "After breakfast, check out and proceed to the airport or railway station with memories of Uttarakhand’s serenity and devotion."
+    }
+  ]
+},
+{
+  "id": "ooty-hill-station-retreat",
+  "name": "Ooty Hill Station Retreat",
+  "location": "Ooty, Tamil Nadu, India",
+  "description": "Relax in the cool hills of Ooty, surrounded by tea gardens, lakes, and colonial charm.",
+  "image": "https://images.pexels.com/photos/16239705/pexels-photo-16239705/free-photo-of-green-forest-on-hills-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "adventure",
+  "price": 21000,
+  "rating": 4.4,
+  "duration": "5 days",
+  "includes": [
+    "4 nights hotel stay",
+    "Daily breakfast",
+    "Toy train ride",
+    "Tea estate tour",
+    "Botanical garden entry"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Ooty Arrival",
+      "description": "Arrive in Ooty and check in to your hotel. Spend the evening relaxing or taking a short walk around Ooty Lake."
+    },
+    {
+      "day": 2,
+      "title": "Botanical Gardens and Doddabetta",
+      "description": "Visit the Government Botanical Gardens and drive up to Doddabetta Peak for panoramic views of the Nilgiris."
+    },
+    {
+      "day": 3,
+      "title": "Tea Estate and Museum",
+      "description": "Explore a working tea estate and learn about tea production at the Tea Museum. Sample different teas in a scenic setting."
+    },
+    {
+      "day": 4,
+      "title": "Toy Train and Coonoor",
+      "description": "Take the famous Nilgiri Mountain Railway to Coonoor. Visit Sim’s Park and enjoy a peaceful afternoon in this nearby hill town."
+    },
+    {
+      "day": 5,
+      "title": "Departure",
+      "description": "After breakfast, check out and depart with memories of misty hills, tea gardens, and Ooty’s charming weather."
+    }
+  ]
+},
+{
+  "id": "mysuru-palace-and-heritage-tour",
+  "name": "Mysuru Palace & Heritage Tour",
+  "location": "Mysuru, Karnataka, India",
+  "description": "Uncover the royal heritage of Mysuru through its palace, temples, and local crafts.",
+  "image": "https://images.pexels.com/photos/9881878/pexels-photo-9881878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "category": "city",
+  "price": 17000,
+  "rating": 4.6,
+  "duration": "3 days",
+  "includes": [
+    "2 nights stay",
+    "Mysore Palace guided tour",
+    "Chamundi Hill temple visit",
+    "Mysore Zoo entry",
+    "Silk factory visit"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Palace",
+      "description": "Arrive and explore the grand Mysore Palace with a guided history walk. Enjoy evening illumination on weekends."
+    },
+    {
+      "day": 2,
+      "title": "Chamundi Hills & Markets",
+      "description": "Climb Chamundi Hills to visit the temple and Nandi statue. Shop for Mysore silk and sandalwood products at Devaraja Market."
+    },
+    {
+      "day": 3,
+      "title": "Zoo & Departure",
+      "description": "Visit the Mysore Zoo, one of the oldest in India. Depart after breakfast with royal impressions of Mysuru."
+    }
+  ]
 }
-
-
-
 
 ];

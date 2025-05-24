@@ -49,9 +49,19 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarClass}`}>
       <div className="container flex items-center justify-between">
         {/* Logo */}
+        {/*}
         <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
           <Globe className={`h-8 w-8 ${logoClass}`} />
           <span className={`text-xl font-bold ${logoClass}`}>Travanta</span>
+        </Link>
+        */}
+        <Link to="/" className="flex items-center gap-2 mb-1">
+          <img
+            src="/blacklogo.png"
+            alt="Travanta Logo"
+            className="h-7 w-7 rounded-full object-cover"
+          />
+          <span className="text-xl font-bold">Travanta</span>
         </Link>
 
         {/* Desktop Navigation */}
