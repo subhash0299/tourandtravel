@@ -25,7 +25,7 @@ const Hero = () => {
             <span className="block mt-2 text-secondary-500">Breathtaking Destinations</span>
           </h1>
           <p className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed">
-            From ancient temples to pristine beaches, let us guide you through unforgettable experiences. Create memories that last a lifetime with our expertly crafted journeys.
+            From ancient temples to pristine beaches, Travanta will guide you through unforgettable experiences. Create memories that last a lifetime with our expertly crafted journeys.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link 
@@ -35,12 +35,14 @@ const Hero = () => {
               Explore Destinations
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Link>
+            {/*
             <Link 
               to="/about" 
               className="btn-secondary"
             >
               Learn More
             </Link>
+            */}
           </div>
         </div>
       </div>
