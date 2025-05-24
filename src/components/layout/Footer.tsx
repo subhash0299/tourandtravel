@@ -20,7 +20,7 @@ const Footer = () => {
            
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img
-                src="/whitelogo.PNG"
+                src="/logos/whitelogo.PNG"
                 alt="Travanta Logo"
                 className="h-14 w-14 rounded-full object-cover"
               />

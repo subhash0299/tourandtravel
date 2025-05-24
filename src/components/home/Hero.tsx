@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container relative z-10">
         {/* Logo at the top of the Hero section */}
         <img
-          src="/whitelogo.PNG"
+          src="/logos/whitelogo.PNG"
           alt="Travanta Logo"
           className="h-32 w-32 mb-8 rounded-full object-cover"
         />
