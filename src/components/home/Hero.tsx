@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SearchForm from '../shared/SearchForm';
 
 const Hero = () => {
   return (
@@ -13,34 +12,35 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/80 to-primary-950/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 to-primary-950/70"></div>
       </div>
       
-      <div className="container relative z-10 pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Hero content */}
-          <div className="text-white max-w-2xl fade-in">
-            <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">
-              Discover The World With
-              <span className="block text-secondary-500">Travanta</span>
-            </h1>
-            <p className="text-gray-200 text-lg mb-8">
-              Embark on unforgettable journeys to the world's most breathtaking destinations. Let us handle the details while you create memories that last a lifetime.
-            </p>
+      <div className="container relative z-10">
+        <div className="max-w-3xl fade-in">
+          <span className="inline-block text-secondary-500 text-lg md:text-xl font-medium mb-4">
+            Your Journey Begins Here
+          </span>
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+            Explore the World's Most
+            <span className="block mt-2 text-secondary-500">Breathtaking Destinations</span>
+          </h1>
+          <p className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed">
+            From ancient temples to pristine beaches, let us guide you through unforgettable experiences. Create memories that last a lifetime with our expertly crafted journeys.
+          </p>
+          <div className="flex flex-wrap gap-4">
             <Link 
               to="/destinations" 
               className="btn-primary group"
             >
-              Explore More
+              Explore Destinations
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Link>
-          </div>
-          
-          {/* Search form */}
-          <div className="w-full">
-            <div className="bg-white rounded-lg shadow-xl p-6 mt-8 lg:mt-0">
-              <SearchForm />
-            </div>
+            <Link 
+              to="/about" 
+              className="btn-secondary"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
