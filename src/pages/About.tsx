@@ -13,7 +13,7 @@ const About = () => {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260')",
+            backgroundImage: "url('/pagepics/about.jpeg')",
           }}
         ></div>
         <div className="container relative z-10 text-center">
@@ -47,7 +47,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/52576/pexels-photo-52576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/pagepics/team.JPG" 
                 alt="Team meeting planning travel itineraries" 
                 className="rounded-lg shadow-lg"
               />
@@ -213,7 +213,7 @@ const About = () => {
       */}
 
       {/* Stats Section */}
-      <section className="py-16 bg-primary-950 text-white">
+      <section className="py-16 bg-primary-800 text-white">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>

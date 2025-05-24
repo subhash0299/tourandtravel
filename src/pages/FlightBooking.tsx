@@ -150,7 +150,7 @@ const FlightBooking = () => {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/1309644/pexels-photo-1309644.jpeg?auto=compress&cs=tinysrgb&w=1260')",
+            backgroundImage: "url('/pagepics/flights.jpg')",
           }}
         ></div>
         <div className="container relative z-10 text-center">

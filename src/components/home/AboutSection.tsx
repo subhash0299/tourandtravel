@@ -16,7 +16,7 @@ const AboutSection = () => {
           {/* Image Side */}
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/1482927/pexels-photo-1482927.jpeg?auto=compress&cs=tinysrgb&w=1260"
+              src="/pagepics/heroabout.jpeg"
               alt="Person skiing on snowy mountain" 
               className="rounded-lg shadow-lg object-cover h-[600px] w-full"
             />

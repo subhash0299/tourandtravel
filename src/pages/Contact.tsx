@@ -58,7 +58,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/3609832/pexels-photo-3609832.jpeg?auto=compress&cs=tinysrgb&w=1260')",
+            backgroundImage: "url('/pagepics/contact.jpeg')",
           }}
         ></div>
         <div className="container relative z-10 text-center">
@@ -287,6 +287,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
+      {/*}
       <section className="py-8 bg-gray-50">
         <div className="container">
           <h2 className="text-2xl font-bold mb-6">Our Location</h2>
@@ -304,6 +305,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">

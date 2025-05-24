@@ -148,7 +148,7 @@ const BusBooking = () => {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/385997/pexels-photo-385997.jpeg?auto=compress&cs=tinysrgb&w=1260')",
+            backgroundImage: "url('/pagepics/bus.jpg')",
           }}
         ></div>
         <div className="container relative z-10 text-center">
