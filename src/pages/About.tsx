@@ -21,7 +21,7 @@ const About = () => {
             About Travanta
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Crafting unforgettable journeys since 2010
+            Crafting unforgettable journeys since 2025
           </p>
         </div>
       </section>
@@ -33,18 +33,21 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Travanta was born from a simple idea: travel should be transformative, not transactional. Our founder, Alex Rivera, after spending years backpacking across 50+ countries, realized that the most memorable moments weren't just about seeing famous landmarks but about authentic connections with people, cultures, and places.
+                Travanta was born in 2025 from a simple yet powerful idea: travel should be transformative, not just transactional. Founded in the vibrant city of Bangalore, India, Travanta emerged as a response to the growing demand for deeper, more meaningful travel experiences in an increasingly fast-paced world.
               </p>
               <p className="text-gray-600 mb-4">
-                In 2010, with just a small team of passionate travelers, we began creating journeys that went beyond the typical tourist experience. We focused on responsible travel, local partnerships, and experiences that would leave lasting impressions on both our travelers and the communities they visited.
+                Our founder, an avid traveler who spent years exploring over 50 countries, realized that true travel memories aren’t made in crowded tourist spots—but in quiet moments of connection with local people, cultures, and untold stories. Inspired by this belief, they joined forces with a small group of like-minded explorers in India to build something different.
               </p>
               <p className="text-gray-600">
-                Today, Travanta has grown into a global team of over 100 travel experts, but our mission remains unchanged: to create meaningful experiences that transform the way people see the world and themselves.
+                From day one, we focused on responsible travel, sustainable tourism, and local partnerships that empower communities and protect cultural heritage. Whether it's a sunrise trek in the Western Ghats or a culinary tour through the streets of Old Delhi, every Travanta journey is designed to leave a lasting impression on both the traveler and the places they visit.
+              </p>
+              <p className="text-gray-600 mt-4">
+                Today, Travanta is at the beginning of an exciting journey. Though newly launched, we are powered by a passionate team of travel experts, storytellers, and cultural enthusiasts who share a bold vision: to become India’s most trusted name in meaningful travel. Based in the dynamic city of Bangalore, every itinerary we craft is rooted in authenticity, respect, and a deep desire to redefine how India travels and connects with the world.
               </p>
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5257587/pexels-photo-5257587.jpeg?auto=compress&cs=tinysrgb&w=1260" 
+                src="https://images.pexels.com/photos/52576/pexels-photo-52576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                 alt="Team meeting planning travel itineraries" 
                 className="rounded-lg shadow-lg"
               />
@@ -134,6 +137,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
+      {/*
       <section className="py-16 bg-white">
         <div className="container">
           <div className="text-center mb-12">
@@ -206,6 +210,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Stats Section */}
       <section className="py-16 bg-primary-950 text-white">
@@ -232,6 +237,7 @@ const About = () => {
       </section>
 
       {/* Testimonials */}
+      {/*
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
@@ -322,6 +328,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 };
