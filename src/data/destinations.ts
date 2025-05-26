@@ -4,7 +4,7 @@ export interface Destination {
   location: string;
   description: string;
   image: string;
-  category: 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain';
+  category: 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain' | 'spiritual';
   price: number;
   rating: number;
   duration: string;
@@ -223,7 +223,7 @@ export const destinations: Destination[] = [
     location: "Varanasi, India",
     description: "Experience the spiritual heart of India with rituals, ancient temples, and dawn boat rides along the sacred Ganges.",
     image: "/destpics/varansi.jpg",
-    category: "cultural",
+    category: "spiritual",
     price: 60000,
     rating: 4.4,
     duration: "4 days",
@@ -661,7 +661,7 @@ export const destinations: Destination[] = [
   "description": "Unwind in the turquoise waters of the Maldives with luxurious villas, coral reefs, and serene beaches.",
   "image": "/destpics/maldives.jpeg",
   "category": "beach",
-  "price": 45000,
+  "price": 225000,
   "rating": 4.9,
   "duration": "5 days",
   "includes": [
@@ -981,7 +981,7 @@ export const destinations: Destination[] = [
   "location": "Andhra Pradesh & Tamil Nadu, India",
   "description": "A sacred journey through South India’s most revered pilgrimage destinations – Tirupati and Rameswaram.",
   "image": "/destpics/rameshwaram.jpeg",
-  "category": "cultural",
+  "category": "spiritual",
   "price": 27000,
   "rating": 4.7,
   "duration": "5 days",

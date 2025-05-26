@@ -59,7 +59,7 @@ const Navbar = () => {
           <img
             src="/logos/whitelogo.PNG"
             alt="Travanta Logo"
-            className="h-7 w-7 rounded-full object-cover"
+            className="h-8 w-8 rounded-full object-cover"
           />
           <span className="text-xl font-bold">Travanta</span>
         </Link>

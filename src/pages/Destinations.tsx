@@ -5,7 +5,7 @@ import { destinations } from '../data/destinations';
 import Card from '../components/ui/Card';
 
 type SortOption = 'featured' | 'price-low' | 'price-high' | 'rating';
-type CategoryType = 'all' | 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain';
+type CategoryType = 'all' | 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain' | 'spiritual';
 
 const Destinations = () => {
   const [searchParams] = useSearchParams();
@@ -50,6 +50,7 @@ const Destinations = () => {
     { id: 'city', label: 'City' },
     { id: 'cultural', label: 'Cultural' },
     { id: 'mountain', label: 'Mountain' },
+    { id: 'spiritual', label: 'Spiritual' },
   ];
   
   const sortOptions: { value: SortOption; label: string }[] = [

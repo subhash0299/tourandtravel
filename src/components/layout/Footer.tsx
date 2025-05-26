@@ -22,7 +22,7 @@ const Footer = () => {
               <img
                 src="/logos/whitelogo.PNG"
                 alt="Travanta Logo"
-                className="h-14 w-14 rounded-full object-cover"
+                className="h-10 w-10 rounded-full object-cover"
               />
               <span className="text-xl font-bold">Travanta</span>
             </Link>

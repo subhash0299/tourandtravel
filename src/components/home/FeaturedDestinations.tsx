@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import StarRating from '../ui/StarRating';
 import { destinations } from '../../data/destinations';
 
-type CategoryType = 'all' | 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain';
+type CategoryType = 'all' | 'adventure' | 'beach' | 'city' | 'cultural' | 'mountain' | 'spiritual';
 
 const FeaturedDestinations = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>('all');
@@ -21,6 +21,7 @@ const FeaturedDestinations = () => {
     { id: 'city', label: 'City' },
     { id: 'cultural', label: 'Cultural' },
     { id: 'mountain', label: 'Mountain' },
+    { id: 'spiritual', label: 'Spiritual' },
   ];
   
   return (
