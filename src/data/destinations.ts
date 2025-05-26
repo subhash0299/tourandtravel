@@ -262,6 +262,64 @@ export const destinations: Destination[] = [
     ]
   },
   {
+  id: "seven-sisters-mawlynnong",
+  name: "Seven Sisters Horizons with Mawlynnong Stay",
+  location: "Shillong, Cherrapunjee & Mawlynnong, Meghalaya, India",
+  description: "Discover the serene beauty of Meghalaya with stays in Shillong, misty Cherrapunjee, and Asia’s cleanest village, Mawlynnong. This immersive journey through Northeast India includes waterfalls, sacred groves, living root bridges, and panoramic views of the valleys.",
+  image: "/destpics/sevensisters.jpg",
+  category: "adventure",
+  price: 72000,
+  rating: 4.6,
+  duration: "7 days",
+  includes: [
+    "Round-trip flights (IndiGo Flight 6E-2038 & SpiceJet SG-8169)",
+    "6 nights accommodation in 3-star hotels and eco camp",
+    "Private car for all intercity transfers",
+    "Daily breakfast at all hotels",
+    "Airport pickup and drop",
+    "Sightseeing in Shillong, Cherrapunjee, Mawlynnong, and Guwahati",
+    "Visit to living root bridge and Mawlynnong village walk"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Shillong",
+      description: "Arrive at Guwahati via IndiGo Flight 6E-2038. Transfer by private car to Shillong with a scenic stop at Umiam Lake. Check in to Hotel Nirvana Orchid (3 Star) and explore Ward’s Lake and Lady Hydari Park."
+    },
+    {
+      day: 2,
+      title: "Shillong Local Sightseeing",
+      description: "Explore the lush green Shillong Golf Course, the Botanical Garden, and end the day with the cascading beauty of Elephant Falls. Private sedan provided for the day. Breakfast included at Nirvana Orchid."
+    },
+    {
+      day: 3,
+      title: "Transfer to Cherrapunjee",
+      description: "Check out from the hotel after breakfast. Travel to Cherrapunjee and check in to Royal View Resort (3 Star). Visit Seven Sisters Falls, Nohkalikai Waterfalls, and Thangkharang Park before resting for the night."
+    },
+    {
+      day: 4,
+      title: "Living Root Bridge & Mawlynnong Stay",
+      description: "Have breakfast and check out from Cherrapunjee. Visit the iconic Living Root Bridge near Riwai. Proceed to Mawlynnong and check in to Shnongpdeng Riverview Campsite. Explore Asia’s cleanest village on foot."
+    },
+    {
+      day: 5,
+      title: "Back to Shillong",
+      description: "Post breakfast, travel back to Shillong and check in again at Hotel Nirvana Orchid. Spend your evening visiting local cafés, shopping for handicrafts, or simply relaxing in the charming hill town."
+    },
+    {
+      day: 6,
+      title: "Shillong to Guwahati",
+      description: "After breakfast, check out and drive to Guwahati. Check in to The Guwahati Address (3 Star). Enjoy sightseeing around Guwahati city, such as the Brahmaputra riverside and local temples."
+    },
+    {
+      day: 7,
+      title: "Departure from Guwahati",
+      description: "Enjoy your final breakfast at The Guwahati Address. Later, transfer to the airport for departure via SpiceJet Flight SG-8169 at 2:45 PM, concluding your beautiful Meghalaya adventure."
+    }
+  ]
+}
+,
+  {
     id: "himalayan-adventure",
     name: "Himalayan Adventure",
     location: "Manali, India",
@@ -326,6 +384,43 @@ export const destinations: Destination[] = [
     ]
   },
   {
+  id: "divine-shirdi-trip",
+  name: "2N Divine Trip to Shirdi",
+  location: "Shirdi & Shani Shingnapur, Maharashtra, India",
+  description: "Embark on a spiritually enriching journey to Shirdi, the home of Sai Baba, and experience peace and devotion at sacred temples like Khandoba Mandir and Baba’s Chavadi. Conclude with a divine visit to the powerful shrine of Shani Shingnapur.",
+  image: "/destpics/shirdi.jpg",
+  category: "spiritual",
+  price: 25491,
+  rating: 4.4,
+  duration: "3 days",
+  includes: [
+    "Round-trip flights",
+    "2 nights accommodation in a 3-star hotel",
+    "Private airport transfers",
+    "Daily breakfast and selected meals",
+    "Sightseeing in Shirdi and Shani Shingnapur",
+    "Visit to Sai Baba Temple, Khandoba Mandir, and Baba's Chavadi"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Shirdi & Temple Visit",
+      description: "Arrive in Shirdi and transfer to your 3-star hotel. In the evening, visit the revered Sai Baba Temple, followed by a spiritual walk to Khandoba Mandir and Baba’s Chavadi – places deeply associated with Sai Baba’s life."
+    },
+    {
+      day: 2,
+      title: "Excursion to Shani Shingnapur",
+      description: "After breakfast, take a day trip to the sacred village of Shani Shingnapur, known for its temple dedicated to Lord Shani. Return to Shirdi in the evening for leisure or optional temple darshan."
+    },
+    {
+      day: 3,
+      title: "Departure from Shirdi",
+      description: "Check out after breakfast and transfer to the airport for your return flight, carrying with you the blessings and tranquility of this divine pilgrimage."
+    }
+  ]
+}
+,
+  {
     id: "goa-beach-retreat",
     name: "Goa Beach Retreat",
     location: "Goa, India",
@@ -373,6 +468,54 @@ export const destinations: Destination[] = [
   }
     ]
   },
+  {
+  id: "kasol-adventure",
+  name: "Kasol Nature & Adventure Retreat",
+  location: "Kasol, Himachal Pradesh, India",
+  description: "Escape to the serene Himalayan village of Kasol, nestled in the Parvati Valley. Enjoy breathtaking views, riverside camping, forest walks, and the rich culture of the mountains.",
+  image: "/destpics/kasol.jpg",
+  category: "mountain",
+  price: 45000,
+  rating: 4.6,
+  duration: "5 days",
+  includes: [
+    "4 nights accommodation in riverside cottages",
+    "Daily breakfast and dinner",
+    "Trek to Kheerganga with guide",
+    "Visit to Manikaran Sahib",
+    "Local village walk in Tosh and Chalal",
+    "Bonfire and music evening",
+    "Private transfers from Bhuntar Airport"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Kasol",
+      description: "Arrive at Bhuntar and transfer to Kasol. Check in to your riverside cottage and unwind amidst pine trees and mountain air. In the evening, take a stroll to Chalal village and enjoy the calm vibes of the Parvati River."
+    },
+    {
+      day: 2,
+      title: "Exploring Local Villages",
+      description: "After breakfast, embark on a guided hike to Tosh village, known for its breathtaking views and cozy cafes. Experience Himachali hospitality and local culture. Return to Kasol in the evening for a relaxing bonfire and music night."
+    },
+    {
+      day: 3,
+      title: "Kheerganga Trek",
+      description: "Early morning departure for the Kheerganga trek – a scenic trail through dense forests and waterfalls. Reach the top and soak in the natural hot springs surrounded by snow-clad peaks. Overnight stay in camp or return based on preference."
+    },
+    {
+      day: 4,
+      title: "Manikaran Sahib & Chill Day",
+      description: "Take a short trip to the spiritual town of Manikaran, famous for its hot springs and the Gurudwara. Return to Kasol and spend the rest of the day at leisure – explore cafes, shop local, or relax by the river."
+    },
+    {
+      day: 5,
+      title: "Departure",
+      description: "After breakfast, check out and head to Bhuntar for your return journey, refreshed and reconnected with nature."
+    }
+  ]
+},
+
   {
     id: "andaman-island-escape",
     name: "Andaman Island Escape",
@@ -614,6 +757,58 @@ export const destinations: Destination[] = [
   ]
 },
 {
+  id: "kedarnath-group-yatra",
+  name: "Kedarnath Yatra - Group Tour",
+  location: "Uttarakhand, India",
+  description: "Embark on a spiritually uplifting group tour to Kedarnath, visiting sacred sites such as Ram Jhula, Gauri Kund, and the divine Kedarnath Temple. Experience the serenity of the Himalayas, holy rivers, and the vibrant spiritual energy of Haridwar and Rishikesh.",
+  image: "/destpics/kedarnath.jpg",
+  category: "spiritual",
+  price: 31022,
+  rating: 4.6,
+  duration: "6 days",
+  includes: [
+    "Intercity car transfers (AC)",
+    "5 nights accommodation (3-star & 4-star hotels)",
+    "Airport pickup and drop from Delhi",
+    "Daily breakfast and dinner",
+    "Group trek to Kedarnath Temple",
+    "Sightseeing in Rishikesh, Gauri Kund, Haridwar"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Rishikesh",
+      description: "Arrive at Hotel Arch near Delhi Airport and travel to Rishikesh by AC vehicle. Visit the famous Ram Jhula, enjoy the scenic beauty, and settle in at Regenta Inn On The Ganges or similar. Dinner included."
+    },
+    {
+      day: 2,
+      title: "Travel to Guptkashi",
+      description: "After breakfast, head to Guptkashi, a sacred town near Kedarnath. Enjoy a scenic drive and check into Regenta Resort Madhuganga or similar. Dinner included."
+    },
+    {
+      day: 3,
+      title: "Trek to Kedarnath",
+      description: "After breakfast, drive to Sonprayag and then take a local vehicle to Gaurikund. Begin your 19-20 km trek to Kedarnath. Witness the Mandakini River and chants of 'Jai Bholenath.' Reach Kedarnath, check in at Behl Ashram or similar shared accommodation. Attend evening Aarti and have dinner."
+    },
+    {
+      day: 4,
+      title: "Darshan & Return to Guptkashi",
+      description: "Early morning Abhishek Puja at Kedarnath Temple. Visit Bhairavnath Temple and Rudra Cave (optional). Trek back to Gaurikund and drive to Guptkashi. Check back into Regenta Resort Madhuganga. Dinner included."
+    },
+    {
+      day: 5,
+      title: "Drive to Haridwar",
+      description: "Drive to Haridwar via Rudraprayag Sangam. Visit Har Ki Pauri for the enchanting Ganga Aarti. Check in at Regenta Orkos Haridwar. Dinner included."
+    },
+    {
+      day: 6,
+      title: "Departure to Delhi",
+      description: "After breakfast, check out and head back to Delhi. Reach by approximately 6:00 PM. Plan return travel accordingly."
+    }
+  ]
+}
+,
+{
   "id": "udaipur-lakes-palaces",
   "name": "Udaipur Lakes & Palaces",
   "location": "Udaipur, India",
@@ -654,6 +849,96 @@ export const destinations: Destination[] = [
     }
   ]
 },
+{
+  id: "lansdowne-escape",
+  name: "Lansdowne Tranquil Hills Escape",
+  location: "Lansdowne, Uttarakhand, India",
+  description: "Rejuvenate in the quiet charm of Lansdowne – a peaceful hill station surrounded by oak and pine forests. Perfect for nature lovers, couples, and anyone seeking serenity away from crowds.",
+  image: "/destpics/lansdowne.jpg",
+  category: "mountain",
+  price: 65000,
+  rating: 4.3,
+  duration: "7 days",
+  includes: [
+    "6 nights accommodation in heritage hotel",
+    "Daily breakfast and dinner",
+    "Nature walks and scenic drives",
+    "Visit to Bhulla Tal, War Memorial, and Darwan Singh Museum",
+    "Excursions to Durga Devi Temple and Kanvashram",
+    "Evening bonfires and stargazing",
+    "Private transfers from Kotdwar Railway Station"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Lansdowne",
+      description: "Arrive at Kotdwar and drive through scenic pine forests to reach Lansdowne. Check into your heritage hotel and relax. In the evening, take a leisurely walk around the town or enjoy the sunset at Tip-in-Top viewpoint."
+    },
+    {
+      day: 2,
+      title: "Bhulla Tal & Lakeside Picnic",
+      description: "Spend your day at Bhulla Tal – a serene man-made lake with boating, fountains, a children’s play area, and walking paths. Enjoy a relaxed lakeside picnic and visit the nearby café surrounded by lush greenery."
+    },
+    {
+      day: 3,
+      title: "Darwan Singh Museum & War Memorial",
+      description: "Explore the Darwan Singh Museum, honoring the first Indian Victoria Cross recipient. Discover military archives and stroll through its rose garden. Later, visit the historic Garhwal Rifles Regimental War Memorial, built in 1923, to pay tribute to the brave soldiers of the region."
+    },
+    {
+      day: 4,
+      title: "Durga Devi Temple Excursion",
+      description: "Head out for a scenic drive to Dugadda and visit the Durga Devi Temple, situated on the banks of River Khoh. This ancient temple, partially housed in a cave, offers a peaceful spiritual experience amidst natural surroundings."
+    },
+    {
+      day: 5,
+      title: "Trip to Kanvashram",
+      description: "Today’s excursion takes you to the legendary Kanvashram near the River Malini. Believed to be the birthplace of King Bharata, this ashram is surrounded by forests and tranquil landscapes – ideal for reflection and nature walks."
+    },
+    {
+      day: 6,
+      title: "Leisure and Local Exploration",
+      description: "Enjoy a slow morning followed by local exploration – shop for handmade woolens and souvenirs or visit hidden cafés around the hill station. In the evening, gather around for a bonfire and stargazing session."
+    },
+    {
+      day: 7,
+      title: "Departure",
+      description: "After breakfast, check out from your hotel and drive back to Kotdwar Railway Station with peaceful memories and a heart full of mountain calm."
+    }
+  ]
+}
+,
+{
+  id: "ayodhya-ram-mandir-trip",
+  name: "2N Ayodhya Spiritual Trip - Ram Mandir & Temples",
+  location: "Ayodhya, Uttar Pradesh, India",
+  description: "Experience the divine aura of Ayodhya, the birthplace of Lord Ram. This 2-day spiritual journey includes a visit to the iconic Ram Mandir, Hanuman Garhi, Kanak Bhawan, and serene ghats along the Sarayu River. Immerse yourself in rich history, architecture, and vibrant local culture.",
+  image: "/destpics/ayodhya.jpg",
+  category: "spiritual",
+  price: 15000,
+  rating: 4.5,
+  duration: "2 days",
+  includes: [
+    "Round-trip transfers from Lucknow or nearby airport/railway station",
+    "2 nights accommodation in a 3-star hotel",
+    "Daily breakfast and one dinner",
+    "Guided temple visits including Ram Mandir, Hanuman Garhi, Kanak Bhawan",
+    "Sarayu River Ghat visit and boat ride",
+    "Local cultural experience and shopping time"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival and Ram Mandir Visit",
+      description: "Arrive at Ayodhya by road or rail. Check into your hotel and freshen up. Start your spiritual journey with a visit to the grand Ram Mandir. Explore the temple complex and learn about its history. Later, visit Hanuman Garhi, dedicated to Lord Hanuman, and spend some time soaking in the peaceful vibes. Enjoy a traditional dinner and overnight stay at the hotel."
+    },
+    {
+      day: 2,
+      title: "Kanak Bhawan and Sarayu River Ghats",
+      description: "After breakfast, visit Kanak Bhawan, the palace of Lord Ram and Sita. Explore nearby temples and stroll along the holy Sarayu River ghats. Experience a serene boat ride on the river. Spend some time in local markets for souvenirs and handicrafts. After lunch, prepare for your return journey with fond memories of this sacred city."
+    }
+  ]
+}
+,
 {
   "id": "maldives-island-escape",
   "name": "Maldives Island Escape",
@@ -741,6 +1026,98 @@ export const destinations: Destination[] = [
     }
   ]
 },
+{
+  id: "dwarka-somnath-sasan-gir",
+  name: "Dwarka, Somnath & Sasan Gir Holiday",
+  location: "Dwarka, Somnath & Sasan Gir, Gujarat, India",
+  description: "Embark on a spiritual and wildlife journey through Gujarat’s most iconic destinations – Dwarka, Somnath, and Sasan Gir. Visit ancient temples dedicated to Lord Krishna and Lord Shiva, and experience thrilling wildlife safaris in Gir National Park, home to the majestic Asiatic Lions.",
+  image: "/destpics/dwarka.jpg",
+  category: "spiritual",
+  price: 28499,
+  rating: 4.5,
+  duration: "5 days",
+  includes: [
+    "Round-trip transfers from Ahmedabad/Rajkot",
+    "4 nights accommodation in 3-star hotels",
+    "AC private car for intercity and local sightseeing",
+    "Daily breakfast and selected dinners",
+    "Dwarka and Somnath temple darshan",
+    "Jeep safari at Gir National Park",
+    "All applicable taxes"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Dwarka",
+      description: "Arrive in Ahmedabad or Rajkot and proceed to Dwarka by private car (approx. 6–7 hours). Check into your hotel and later visit the Dwarkadhish Temple for evening aarti. Take a leisurely walk along Gomti Ghat before dinner."
+    },
+    {
+      day: 2,
+      title: "Dwarka Sightseeing & Transfer to Somnath",
+      description: "Post breakfast, visit Bet Dwarka by ferry, Nageshwar Jyotirlinga Temple, Rukmini Devi Temple, and Gopi Talav. Later, drive to Somnath (approx. 5 hours). On arrival, attend the mesmerizing light & sound show at the Somnath Temple and witness the evening aarti."
+    },
+    {
+      day: 3,
+      title: "Somnath Sightseeing & Transfer to Sasan Gir",
+      description: "Visit the sacred Somnath Temple again in the morning. Explore Bhalka Tirth and Triveni Sangam. After breakfast, depart for Sasan Gir (approx. 2.5 hours). Check into a jungle resort or hotel and enjoy an evening nature walk or relax amidst nature."
+    },
+    {
+      day: 4,
+      title: "Gir Jungle Safari & Leisure",
+      description: "Wake up early for an adventurous Jeep Safari at Gir National Park (permit included). Spot Asiatic lions, leopards, deer, and many bird species. Return to your hotel for breakfast and spend the rest of the day at leisure or visit nearby tribal villages."
+    },
+    {
+      day: 5,
+      title: "Departure",
+      description: "After breakfast, check out and drive back to Ahmedabad or Rajkot for your onward journey, filled with spiritual energy and thrilling memories of Gujarat."
+    }
+  ]
+}
+,
+{
+  id: "mysore-wayanad-magical",
+  name: "Magical Vacay in Mysore & Wayanad",
+  location: "Mysore & Wayanad, India",
+  description: "Explore the royal grandeur of Mysore and the lush green beauty of Wayanad on this magical 4-day getaway. Experience historical palaces, serene lakes, misty hills, and vibrant culture with smooth intercity transfers and curated activities.",
+  image: "/destpics/wayanad.jpg",
+  category: "adventure",
+  price: 52000,
+  rating: 4.5,
+  duration: "4 days",
+  includes: [
+    "Round-trip flights",
+    "3 nights accommodation in 3-star hotels",
+    "Airport and intercity transfers by private car",
+    "Daily breakfast and 2 selected dinners",
+    "Visit to Tipu Sultan's Summer Palace and Brindavan Gardens",
+    "Visit to Chamundi Hills and Mysore Palace",
+    "Excursion to Banasura Sagar Dam and Wayanad Heritage Museum",
+    "Visit to Pookode Lake and Edakkal Caves"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Mysore",
+      description: "Fly into Mysore and check into your hotel. Begin your journey with a visit to Tipu Sultan’s Summer Palace – an Indo-Islamic architectural gem. Later, unwind at the beautifully lit Brindavan Gardens with musical fountains. Enjoy your evening at leisure."
+    },
+    {
+      day: 2,
+      title: "Mysore Sights & Drive to Wayanad",
+      description: "After breakfast, explore the iconic Mysore Palace – a marvel of royal heritage. Then visit Chamundi Hills to take in panoramic views and the temple. By noon, head to Wayanad via a scenic drive. Check in and relax at your resort in the hills."
+    },
+    {
+      day: 3,
+      title: "Explore Wayanad",
+      description: "Spend the day exploring Wayanad’s natural and cultural gems. Visit the majestic Banasura Sagar Dam and the Wayanad Heritage Museum. Post-lunch, explore Pookode Lake – a calm freshwater lake surrounded by forests. Wrap up with a short trek to the ancient Edakkal Caves, famous for prehistoric carvings."
+    },
+    {
+      day: 4,
+      title: "Departure",
+      description: "After breakfast, check out and transfer to the airport for your return flight, carrying with you memories of palaces, hills, and cultural wonders."
+    }
+  ]
+}
+,
 {
   "id": "gujarat-heritage-trail",
   "name": "Gujarat Heritage Trail",
