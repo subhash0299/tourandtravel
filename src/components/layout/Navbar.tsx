@@ -57,7 +57,7 @@ const Navbar = () => {
         */}
         <Link to="/" className="flex items-center gap-2 mb-1">
           <img
-            src="/logos/blacklogo.png"
+            src="/logos/whitelogo.PNG"
             alt="Travanta Logo"
             className="h-7 w-7 rounded-full object-cover"
           />
