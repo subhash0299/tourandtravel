@@ -68,7 +68,7 @@ const ContactSection = () => {
                   <div>
                     <p className="text-sm text-gray-300">Phone</p>
                     <a href="tel:+12345678901" className="text-lg font-medium hover:text-secondary-300 transition-colors">
-                      +1 (234) 567-8901
+                      +91 9512345678
                     </a>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ const ContactSection = () => {
                   <div>
                     <p className="text-sm text-gray-300">Address</p>
                     <p className="text-lg font-medium">
-                      123 Travel Street, Manhattan Tower<br />
-                      New York, NY 10001
+                      123 Travel Street, TV Tower<br />
+                      BENGALURU, KA 560065
                     </p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const ContactSection = () => {
                       id="name"
                       name="name"
                       className="input"
-                      placeholder="John Doe"
+                      placeholder="Samay Kumar"
                       required
                       value={formData.name}
                       onChange={handleChange}
@@ -160,7 +160,7 @@ const ContactSection = () => {
                       id="email"
                       name="email"
                       className="input"
-                      placeholder="johndoe@example.com"
+                      placeholder="samaykumar@example.com"
                       required
                       value={formData.email}
                       onChange={handleChange}

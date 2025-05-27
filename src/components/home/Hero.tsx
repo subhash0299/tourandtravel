@@ -27,7 +27,7 @@ const Hero = () => {
             Your Journey Begins Here
           </span>
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
-            Explore the World's Most
+            Explore the India's Most
             <span className="block mt-2 text-secondary-500">Breathtaking Destinations</span>
           </h1>
           <p className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed">

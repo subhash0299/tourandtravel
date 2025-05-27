@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   const stats = [
-    { label: 'Years of Experience', value: '15+' },
-    { label: 'Happy Travelers', value: '50k+' },
-    { label: 'Tour Destinations', value: '100+' },
-    { label: 'Customer Support', value: '24/7' },
+{ label: 'Years of Experience', value: '1+' },
+{ label: 'Happy Travelers', value: '50+' },
+{ label: 'Tour Destinations', value: '35+' },
+{ label: 'Customer Support', value: '24/7' },
   ];
 
   return (
