@@ -67,10 +67,64 @@ const BookingFlow = () => {
   const [availableAccommodations, setAvailableAccommodations] = useState<AccommodationOption[]>([]);
   const [dayPlans, setDayPlans] = useState<DayPlan[]>([]);
 
-  const popularCities = [
+  const allCities = [
     'Delhi', 'Mumbai', 'Bangalore', 'Chennai', 'Kolkata', 
-    'Hyderabad', 'Ahmedabad', 'Pune', 'Jaipur', 'Kochi'
+    'Hyderabad', 'Ahmedabad', 'Pune', 'Jaipur', 'Kochi',
+    'Goa', 'Agra', 'Varanasi', 'Udaipur', 'Jodhpur',
+    'Amritsar', 'Rishikesh', 'Manali', 'Shimla', 'Darjeeling'
   ];
+
+  // Get destination city from tour location
+  const getDestinationCity = () => {
+    if (!tour) return '';
+    
+    // Extract city name from tour location
+    const location = tour.location.toLowerCase();
+    
+    // Map tour locations to cities
+    const locationToCityMap: { [key: string]: string } = {
+      'rajasthan': 'Jaipur',
+      'goa': 'Goa',
+      'kerala': 'Kochi',
+      'agra': 'Agra',
+      'varanasi': 'Varanasi',
+      'udaipur': 'Udaipur',
+      'jaipur': 'Jaipur',
+      'mumbai': 'Mumbai',
+      'delhi': 'Delhi',
+      'bangalore': 'Bangalore',
+      'chennai': 'Chennai',
+      'kolkata': 'Kolkata',
+      'hyderabad': 'Hyderabad',
+      'pune': 'Pune',
+      'ahmedabad': 'Ahmedabad',
+      'amritsar': 'Amritsar',
+      'rishikesh': 'Rishikesh',
+      'manali': 'Manali',
+      'shimla': 'Shimla',
+      'darjeeling': 'Darjeeling'
+    };
+
+    // Check if location contains any of the mapped cities
+    for (const [key, city] of Object.entries(locationToCityMap)) {
+      if (location.includes(key)) {
+        return city;
+      }
+    }
+
+    // Default fallback - try to find a matching city in the location string
+    const foundCity = allCities.find(city => 
+      location.includes(city.toLowerCase())
+    );
+    
+    return foundCity || 'Jaipur'; // Default fallback
+  };
+
+  // Filter cities to exclude destination city
+  const getAvailableCities = () => {
+    const destinationCity = getDestinationCity();
+    return allCities.filter(city => city !== destinationCity);
+  };
 
   useEffect(() => {
     document.title = tour ? `Book ${tour.name} | Travanta` : 'Book Tour | Travanta';
@@ -244,6 +298,9 @@ const BookingFlow = () => {
     { number: 5, title: 'Confirmation', description: 'Complete booking' }
   ];
 
+  const destinationCity = getDestinationCity();
+  const availableCities = getAvailableCities();
+
   return (
     <div>
       {/* Hero Section */}
@@ -258,7 +315,7 @@ const BookingFlow = () => {
               Book {tour.name}
             </h1>
             <p className="text-xl text-gray-200">
-              Customize your perfect {tour.duration} journey
+              Customize your perfect {tour.duration} journey to {destinationCity}
             </p>
           </div>
         </div>
@@ -308,6 +365,15 @@ const BookingFlow = () => {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-6">Travel Details</h2>
                 
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                  <div className="flex items-center">
+                    <MapPin className="h-5 w-5 text-blue-600 mr-2" />
+                    <p className="text-blue-800">
+                      <strong>Destination:</strong> {destinationCity} ({tour.location})
+                    </p>
+                  </div>
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -319,11 +385,14 @@ const BookingFlow = () => {
                       onChange={(e) => updateBookingData('startingCity', e.target.value)}
                       required
                     >
-                      <option value="">Select your city</option>
-                      {popularCities.map(city => (
+                      <option value="">Select your departure city</option>
+                      {availableCities.map(city => (
                         <option key={city} value={city}>{city}</option>
                       ))}
                     </select>
+                    <p className="text-xs text-gray-500 mt-1">
+                      Note: {destinationCity} is excluded as it's your destination
+                    </p>
                   </div>
                   
                   <div>
@@ -392,7 +461,7 @@ const BookingFlow = () => {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-6">Choose Your Flights</h2>
                 <p className="text-gray-600 mb-6">
-                  {bookingData.startingCity} → {tour.location} on {format(new Date(bookingData.departureDate), 'MMM dd, yyyy')}
+                  {bookingData.startingCity} → {destinationCity} on {format(new Date(bookingData.departureDate), 'MMM dd, yyyy')}
                 </p>
                 
                 <div className="space-y-4 mb-8">
@@ -428,7 +497,7 @@ const BookingFlow = () => {
                           
                           <div className="text-center">
                             <p className="font-bold">{flight.arrivalTime}</p>
-                            <p className="text-sm text-gray-600">{tour.location}</p>
+                            <p className="text-sm text-gray-600">{destinationCity}</p>
                           </div>
                           
                           <div className="text-right">
@@ -605,7 +674,7 @@ const BookingFlow = () => {
                       <h3 className="font-bold mb-2">Flight</h3>
                       <p>{bookingData.selectedFlight.airline} {bookingData.selectedFlight.flightNumber}</p>
                       <p className="text-gray-600">
-                        {bookingData.startingCity} → {tour.location} • {bookingData.selectedFlight.departureTime}
+                        {bookingData.startingCity} → {destinationCity} • {bookingData.selectedFlight.departureTime}
                       </p>
                       <p className="text-xl font-bold text-primary-950">
                         ₹{bookingData.selectedFlight.price * bookingData.travelers}
