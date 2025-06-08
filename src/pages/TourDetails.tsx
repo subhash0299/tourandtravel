@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { MapPin, Clock, Star, Users, Check } from 'lucide-react';
 import { destinations } from '../data/destinations';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
@@ -127,9 +127,12 @@ const TourDetails = () => {
                   </div>
                 </div>
 
-                <button className="btn-primary w-full mb-4">
+                <Link 
+                  to={`/destinations/${tour.id}/book`}
+                  className="btn-primary w-full mb-4 justify-center"
+                >
                   Book Now
-                </button>
+                </Link>
 
                 <p className="text-sm text-gray-500 text-center">
                   Free cancellation up to 30 days before departure

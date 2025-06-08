@@ -12,6 +12,7 @@ const FlightBooking = lazy(() => import('./pages/FlightBooking'));
 const BusBooking = lazy(() => import('./pages/BusBooking'));
 const Bookings = lazy(() => import('./pages/Bookings'));
 const TourDetails = lazy(() => import('./pages/TourDetails'));
+const BookingFlow = lazy(() => import('./pages/BookingFlow'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/destinations/:id" element={<TourDetails />} />
+          <Route path="/destinations/:id/book" element={<BookingFlow />} />
           <Route path="/flights" element={<FlightBooking />} />
           <Route path="/buses" element={<BusBooking />} />
           <Route path="/bookings" element={<Bookings />} />
