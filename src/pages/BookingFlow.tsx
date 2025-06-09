@@ -81,11 +81,32 @@ const BookingFlow = () => {
     // Extract city name from tour location
     const location = tour.location.toLowerCase();
     
-    // Map tour locations to cities
+    // Comprehensive mapping of tour locations to cities
     const locationToCityMap: { [key: string]: string } = {
+      // States to major cities
       'rajasthan': 'Jaipur',
       'goa': 'Goa',
       'kerala': 'Kochi',
+      'gujarat': 'Ahmedabad',
+      'punjab': 'Amritsar',
+      'uttarakhand': 'Rishikesh',
+      'himachal pradesh': 'Manali',
+      'west bengal': 'Kolkata',
+      'tamil nadu': 'Chennai',
+      'karnataka': 'Bangalore',
+      'maharashtra': 'Mumbai',
+      'uttar pradesh': 'Agra',
+      'bihar': 'Patna',
+      'odisha': 'Bhubaneswar',
+      'orissa': 'Bhubaneswar',
+      'sikkim': 'Gangtok',
+      'ladakh': 'Leh',
+      'laddakh': 'Leh',
+      'andaman': 'Port Blair',
+      'northeast': 'Guwahati',
+      'seven sisters': 'Guwahati',
+      
+      // Specific cities
       'agra': 'Agra',
       'varanasi': 'Varanasi',
       'udaipur': 'Udaipur',
@@ -93,6 +114,7 @@ const BookingFlow = () => {
       'mumbai': 'Mumbai',
       'delhi': 'Delhi',
       'bangalore': 'Bangalore',
+      'bengaluru': 'Bangalore',
       'chennai': 'Chennai',
       'kolkata': 'Kolkata',
       'hyderabad': 'Hyderabad',
@@ -102,22 +124,55 @@ const BookingFlow = () => {
       'rishikesh': 'Rishikesh',
       'manali': 'Manali',
       'shimla': 'Shimla',
-      'darjeeling': 'Darjeeling'
+      'darjeeling': 'Darjeeling',
+      'jodhpur': 'Jodhpur',
+      'kochi': 'Kochi',
+      'mysuru': 'Mysuru',
+      'mysore': 'Mysuru',
+      'ooty': 'Coimbatore',
+      'nainital': 'Delhi',
+      'kasol': 'Chandigarh',
+      'lansdowne': 'Delhi',
+      'wayanad': 'Kochi',
+      'kedarnath': 'Delhi',
+      'dwarka': 'Ahmedabad',
+      'shirdi': 'Mumbai',
+      'ayodhya': 'Lucknow',
+      'rameshwaram': 'Chennai',
+      'golden temple': 'Amritsar',
+      'maldives': 'Kochi', // Closest Indian city for international destination
+      'himalayan': 'Delhi'
     };
 
-    // Check if location contains any of the mapped cities
+    // Check if location contains any of the mapped cities/states
     for (const [key, city] of Object.entries(locationToCityMap)) {
       if (location.includes(key)) {
         return city;
       }
     }
 
-    // Default fallback - try to find a matching city in the location string
+    // If no specific mapping found, try to find a matching city in the location string
     const foundCity = allCities.find(city => 
       location.includes(city.toLowerCase())
     );
     
-    return foundCity || 'Jaipur'; // Default fallback
+    // If still no match, try to extract from tour name
+    if (!foundCity && tour.name) {
+      const tourName = tour.name.toLowerCase();
+      for (const [key, city] of Object.entries(locationToCityMap)) {
+        if (tourName.includes(key)) {
+          return city;
+        }
+      }
+      
+      // Check tour name against cities
+      const cityFromName = allCities.find(city => 
+        tourName.includes(city.toLowerCase())
+      );
+      if (cityFromName) return cityFromName;
+    }
+    
+    return foundCity || 'Delhi'; // Default fallback to Delhi instead of Jaipur
   };
 
   // Filter cities to exclude destination city
